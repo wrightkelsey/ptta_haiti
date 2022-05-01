@@ -1,0 +1,9 @@
+# Ignore Stata data files
+*.dta
+
+# Ignore csv files 
+*.csv 
+
+# Ignore xls files 
+*.xls 
+
