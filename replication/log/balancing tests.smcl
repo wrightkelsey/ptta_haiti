@@ -1,24 +1,31 @@
 {smcl}
-{txt}{sf}{ul off}{.-}
+{com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}/home/j.gignoux/U/Travail/GMSW/analysis/replication/log/balancing tests.smcl
+       {txt}log:  {res}D:\ptta_haiti\replication\log/balancing tests.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}17 Jan 2022, 12:25:51
+ {txt}opened on:  {res} 3 May 2022, 18:08:14
 {txt}
 {com}. 
 . 
 . local groups income landuse landuse_rice other_crops yield_1 yield_2  irrig labor inputs   livestock housing assets_hh assets_farm finance demogr food_sec dist_supply
 {txt}
 {com}. 
-. local groups_sel demogr_sel income_sel landuse_sel landuse_rice_sel other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
+. 
+. /**
+> local groups_sel demogr_sel income_sel landuse_sel landuse_rice_sel other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
+> ***/
+. 
+. local groups_sel demogr_sel income_sel landuse_sel  other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
 {txt}
 {com}. 
+. ***/
+. 
 . *local groups_sel demogr_sel 
 . 
 . 
 . su  `demogr_sel'
 
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 HH_childre~l {c |}{res}        515    1.499029    1.402298          0          7
 {txt}HH_adults_~l {c |}{res}        515    4.182524    2.151302          1         12
@@ -108,10 +115,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.0670
                                                 {txt}Root MSE          =    {res} 1.3817
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}HH_children_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}HH_children_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.3771239{col 29}{space 2} .0939068{col 40}{space 1}   -4.02{col 49}{space 3}0.000{col 57}{space 4}-.5672283{col 70}{space 3}-.1870196
 {txt}{space 15} {c |}
@@ -139,7 +146,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0473813{col 29}{space 2} .1642384{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 1.209979{col 29}{space 2} .1196528{col 40}{space 1}   10.11{col 49}{space 3}0.000{col 57}{space 4} .9677543{col 70}{space 3} 1.452203
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 HH_childre~l {c |}{res}        275    1.632727    1.474733          0          7
 
@@ -160,10 +167,10 @@ HH_childre~l {c |}{res}        275    1.632727    1.474733          0          7
                                                 {txt}R-squared         = {res}    0.0594
                                                 {txt}Root MSE          =    {res} 2.1283
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  HH_adults_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  HH_adults_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.1416852{col 29}{space 2} .1289652{col 40}{space 1}   -1.10{col 49}{space 3}0.279{col 57}{space 4}-.4027615{col 70}{space 3} .1193911
 {txt}{space 15} {c |}
@@ -191,7 +198,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0955294{col 29}{space 2} .2452921{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  4.63314{col 29}{space 2}  .178055{col 40}{space 1}   26.02{col 49}{space 3}0.000{col 57}{space 4} 4.272687{col 70}{space 3} 4.993594
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 HH_adults_~l {c |}{res}        275    4.265455     2.20287          1         12
 
@@ -212,10 +219,10 @@ HH_adults_~l {c |}{res}        275    4.265455     2.20287          1         12
                                                 {txt}R-squared         = {res}    0.0317
                                                 {txt}Root MSE          =    {res} .23161
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1} femalehead_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1} femalehead_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.0038823{col 29}{space 2} .0128319{col 40}{space 1}   -0.30{col 49}{space 3}0.764{col 57}{space 4}-.0298591{col 70}{space 3} .0220946
 {txt}{space 15} {c |}
@@ -243,7 +250,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0037879{col 29}{space 2} .0512346{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .0429914{col 29}{space 2} .0364002{col 40}{space 1}    1.18{col 49}{space 3}0.245{col 57}{space 4} -.030697{col 70}{space 3} .1166798
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 femalehead~l {c |}{res}        275    .0545455    .2275049          0          1
 
@@ -264,10 +271,10 @@ femalehead~l {c |}{res}        275    .0545455    .2275049          0          1
                                                 {txt}R-squared         = {res}    0.0799
                                                 {txt}Root MSE          =    {res} 12.614
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}     HH_age_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}     HH_age_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 1.947744{col 29}{space 2} 1.085346{col 40}{space 1}    1.79{col 49}{space 3}0.081{col 57}{space 4}-.2494242{col 70}{space 3} 4.144912
 {txt}{space 15} {c |}
@@ -295,7 +302,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-3.626364{col 29}{space 2} 1.961112{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 48.86591{col 29}{space 2} 1.910832{col 40}{space 1}   25.57{col 49}{space 3}0.000{col 57}{space 4} 44.99763{col 70}{space 3} 52.73418
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 2}HH_age_bsl {c |}{res}        272    45.44118    12.50344         20         80
 
@@ -316,10 +323,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-3.626364{col 29}{space 2} 1.961112{c
                                                 {txt}R-squared         = {res}    0.1139
                                                 {txt}Root MSE          =    {res}  .4513
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}       agr_prod{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}       agr_prod{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.0138277{col 29}{space 2} .0368293{col 40}{space 1}   -0.38{col 49}{space 3}0.709{col 57}{space 4}-.0883847{col 70}{space 3} .0607293
 {txt}{space 15} {c |}
@@ -347,7 +354,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1938138{col 29}{space 2} .0653573{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .0852335{col 29}{space 2}  .060574{col 40}{space 1}    1.41{col 49}{space 3}0.168{col 57}{space 4}-.0373921{col 70}{space 3} .2078592
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 4}agr_prod {c |}{res}        276    .3333333    .4722608          0          1
 
@@ -368,10 +375,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1938138{col 29}{space 2} .0653573{c
                                                 {txt}R-squared         = {res}    0.0345
                                                 {txt}Root MSE          =    {res} .28892
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}       agr_wage{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}       agr_wage{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} -.015643{col 29}{space 2} .0345214{col 40}{space 1}   -0.45{col 49}{space 3}0.653{col 57}{space 4} -.085528{col 70}{space 3}  .054242
 {txt}{space 15} {c |}
@@ -399,7 +406,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0412287{col 29}{space 2} .0375328{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1056751{col 29}{space 2} .0619331{col 40}{space 1}    1.71{col 49}{space 3}0.096{col 57}{space 4} -.019702{col 70}{space 3} .2310522
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 4}agr_wage {c |}{res}        276    .0942029    .2926414          0          1
 
@@ -420,10 +427,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0412287{col 29}{space 2} .0375328{c
                                                 {txt}R-squared         = {res}    0.0706
                                                 {txt}Root MSE          =    {res} .39084
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}     oth_sector{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}     oth_sector{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0036523{col 29}{space 2} .0277766{col 40}{space 1}    0.13{col 49}{space 3}0.896{col 57}{space 4}-.0525785{col 70}{space 3} .0598831
 {txt}{space 15} {c |}
@@ -451,7 +458,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1070777{col 29}{space 2} .0450918{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1811787{col 29}{space 2} .0592653{col 40}{space 1}    3.06{col 49}{space 3}0.004{col 57}{space 4} .0612024{col 70}{space 3} .3011549
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 2}oth_sector {c |}{res}        276    .2173913    .4132203          0          1
 
@@ -472,10 +479,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1070777{col 29}{space 2} .0450918{c
                                                 {txt}R-squared         = {res}    0.0646
                                                 {txt}Root MSE          =    {res} .46006
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}    HH_someprim{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}    HH_someprim{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.0948547{col 29}{space 2} .0480045{col 40}{space 1}   -1.98{col 49}{space 3}0.055{col 57}{space 4}-.1920348{col 70}{space 3} .0023254
 {txt}{space 15} {c |}
@@ -503,7 +510,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0802847{col 29}{space 2} .0623072{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .7328369{col 29}{space 2} .0724953{col 40}{space 1}   10.11{col 49}{space 3}0.000{col 57}{space 4} .5860779{col 70}{space 3} .8795959
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 1}HH_someprim {c |}{res}        275    .7236364    .4480141          0          1
 
@@ -524,10 +531,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0802847{col 29}{space 2} .0623072{c
                                                 {txt}R-squared         = {res}    0.0964
                                                 {txt}Root MSE          =    {res}  .4476
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  workgroup_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  workgroup_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0396523{col 29}{space 2} .0574636{col 40}{space 1}    0.69{col 49}{space 3}0.494{col 57}{space 4}-.0766767{col 70}{space 3} .1559812
 {txt}{space 15} {c |}
@@ -555,7 +562,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0491973{col 29}{space 2} .0611191{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  .378624{col 29}{space 2} .0570676{col 40}{space 1}    6.63{col 49}{space 3}0.000{col 57}{space 4} .2630967{col 70}{space 3} .4941513
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 workgroup_~l {c |}{res}        275    .2763636    .4480141          0          1
 
@@ -576,10 +583,10 @@ workgroup_~l {c |}{res}        275    .2763636    .4480141          0          1
                                                 {txt}R-squared         = {res}    0.0951
                                                 {txt}Root MSE          =    {res} .38566
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  agri_asso_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  agri_asso_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .1499478{col 29}{space 2} .0358112{col 40}{space 1}    4.19{col 49}{space 3}0.000{col 57}{space 4} .0774517{col 70}{space 3} .2224438
 {txt}{space 15} {c |}
@@ -607,7 +614,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0093437{col 29}{space 2} .0363489{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1160517{col 29}{space 2} .0483754{col 40}{space 1}    2.40{col 49}{space 3}0.021{col 57}{space 4} .0181208{col 70}{space 3} .2139826
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 agri_asso_~l {c |}{res}        275    .1272727    .3338859          0          1
 
@@ -628,10 +635,10 @@ agri_asso_~l {c |}{res}        275    .1272727    .3338859          0          1
                                                 {txt}R-squared         = {res}    0.0716
                                                 {txt}Root MSE          =    {res} .25404
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  agri_coop_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  agri_coop_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0032259{col 29}{space 2} .0258051{col 40}{space 1}    0.13{col 49}{space 3}0.901{col 57}{space 4}-.0490137{col 70}{space 3} .0554655
 {txt}{space 15} {c |}
@@ -659,7 +666,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0155007{col 29}{space 2} .0398422{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .0648918{col 29}{space 2} .0405958{col 40}{space 1}    1.60{col 49}{space 3}0.118{col 57}{space 4}  -.01729{col 70}{space 3} .1470737
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 agri_coop_~l {c |}{res}        275    .0763636    .2660632          0          1
 
@@ -686,10 +693,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.0690
                                                 {txt}Root MSE          =    {res} 1120.2
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}total2_income~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}total2_income~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 46.31317{col 29}{space 2} 142.8548{col 40}{space 1}    0.32{col 49}{space 3}0.748{col 57}{space 4}-242.8812{col 70}{space 3} 335.5076
 {txt}{space 15} {c |}
@@ -717,7 +724,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}   460.59{col 29}{space 2} 152.6818{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 433.2279{col 29}{space 2}  256.297{col 40}{space 1}    1.69{col 49}{space 3}0.099{col 57}{space 4}-85.61818{col 70}{space 3} 952.0739
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 total2_inc~l {c |}{res}        275    911.8528    1172.166          0    6399.69
 
@@ -738,10 +745,10 @@ total2_inc~l {c |}{res}        275    911.8528    1172.166          0    6399.69
                                                 {txt}R-squared         = {res}    0.0547
                                                 {txt}Root MSE          =    {res} 474.39
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  ag_income_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  ag_income_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 12.48654{col 29}{space 2} 42.46685{col 40}{space 1}    0.29{col 49}{space 3}0.770{col 57}{space 4}-73.48309{col 70}{space 3} 98.45618
 {txt}{space 15} {c |}
@@ -769,7 +776,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 131.1043{col 29}{space 2}  65.2498{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 126.2319{col 29}{space 2} 70.35706{col 40}{space 1}    1.79{col 49}{space 3}0.081{col 57}{space 4}-16.19852{col 70}{space 3} 268.6623
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 ag_income_~l {c |}{res}        275    300.2977    489.1513          0       2200
 
@@ -784,47 +791,47 @@ ag_income_~l {c |}{res}        275    300.2977    489.1513          0       2200
 {txt}added scalar:
              e(p_conv) =  {res}.77033481
 {txt}(3 missing values generated)
-(5 real changes made)
-(5 real changes made)
+(0 real changes made)
+(0 real changes made)
 
 Linear regression                               Number of obs     = {res}       515
                                                 {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
                                                 {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.0927
-                                                {txt}Root MSE          =    {res} 1.2462
+                                                {txt}R-squared         = {res}    0.1065
+                                                {txt}Root MSE          =    {res} 1.1292
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  n_allPlot_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  n_allPlot_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .2709153{col 29}{space 2}  .119124{col 40}{space 1}    2.27{col 49}{space 3}0.029{col 57}{space 4} .0297615{col 70}{space 3} .5120692
+{space 6}treatment {c |}{col 17}{res}{space 2} .2121439{col 29}{space 2} .1054062{col 40}{space 1}    2.01{col 49}{space 3}0.051{col 57}{space 4}-.0012398{col 70}{space 3} .4255276
 {txt}{space 15} {c |}
 {space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2}-.0068491{col 29}{space 2}  .136952{col 40}{space 1}   -0.05{col 49}{space 3}0.960{col 57}{space 4}-.2840938{col 70}{space 3} .2703957
-{txt}{space 13}3  {c |}{col 17}{res}{space 2} .3077959{col 29}{space 2} .1026444{col 40}{space 1}    3.00{col 49}{space 3}0.005{col 57}{space 4} .1000032{col 70}{space 3} .5155886
-{txt}{space 13}4  {c |}{col 17}{res}{space 2}-.1641703{col 29}{space 2} .1943975{col 40}{space 1}   -0.84{col 49}{space 3}0.404{col 57}{space 4}-.5577075{col 70}{space 3} .2293669
-{txt}{space 13}5  {c |}{col 17}{res}{space 2} .0048722{col 29}{space 2}  .208563{col 40}{space 1}    0.02{col 49}{space 3}0.981{col 57}{space 4}-.4173415{col 70}{space 3} .4270859
-{txt}{space 13}6  {c |}{col 17}{res}{space 2}   1.1331{col 29}{space 2} .2856687{col 40}{space 1}    3.97{col 49}{space 3}0.000{col 57}{space 4} .5547937{col 70}{space 3} 1.711406
-{txt}{space 13}7  {c |}{col 17}{res}{space 2}-.3964297{col 29}{space 2} .4523203{col 40}{space 1}   -0.88{col 49}{space 3}0.386{col 57}{space 4}-1.312104{col 70}{space 3} .5192448
-{txt}{space 12}11  {c |}{col 17}{res}{space 2} .4634624{col 29}{space 2} .1898064{col 40}{space 1}    2.44{col 49}{space 3}0.019{col 57}{space 4} .0792193{col 70}{space 3} .8477054
-{txt}{space 12}12  {c |}{col 17}{res}{space 2} .3121151{col 29}{space 2} .3440623{col 40}{space 1}    0.91{col 49}{space 3}0.370{col 57}{space 4}-.3844026{col 70}{space 3} 1.008633
-{txt}{space 12}13  {c |}{col 17}{res}{space 2}  .748262{col 29}{space 2} .1977512{col 40}{space 1}    3.78{col 49}{space 3}0.001{col 57}{space 4} .3479357{col 70}{space 3} 1.148588
-{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.1206326{col 29}{space 2} .2486223{col 40}{space 1}   -0.49{col 49}{space 3}0.630{col 57}{space 4}-.6239422{col 70}{space 3} .3826769
-{txt}{space 12}15  {c |}{col 17}{res}{space 2} .2741689{col 29}{space 2} .1414075{col 40}{space 1}    1.94{col 49}{space 3}0.060{col 57}{space 4}-.0120957{col 70}{space 3} .5604335
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}-.0887984{col 29}{space 2} .1887692{col 40}{space 1}   -0.47{col 49}{space 3}0.641{col 57}{space 4}-.4709417{col 70}{space 3}  .293345
-{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.7206616{col 29}{space 2} .1970789{col 40}{space 1}   -3.66{col 49}{space 3}0.001{col 57}{space 4}-1.119627{col 70}{space 3}-.3216963
+{space 13}2  {c |}{col 17}{res}{space 2} .0653258{col 29}{space 2} .1514164{col 40}{space 1}    0.43{col 49}{space 3}0.669{col 57}{space 4}-.2412006{col 70}{space 3} .3718522
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} .3617521{col 29}{space 2} .1084254{col 40}{space 1}    3.34{col 49}{space 3}0.002{col 57}{space 4} .1422563{col 70}{space 3} .5812479
+{txt}{space 13}4  {c |}{col 17}{res}{space 2}-.1231934{col 29}{space 2}  .193896{col 40}{space 1}   -0.64{col 49}{space 3}0.529{col 57}{space 4}-.5157153{col 70}{space 3} .2693285
+{txt}{space 13}5  {c |}{col 17}{res}{space 2} .0773413{col 29}{space 2} .2072095{col 40}{space 1}    0.37{col 49}{space 3}0.711{col 57}{space 4}-.3421324{col 70}{space 3}  .496815
+{txt}{space 13}6  {c |}{col 17}{res}{space 2} 1.173349{col 29}{space 2} .3014205{col 40}{space 1}    3.89{col 49}{space 3}0.000{col 57}{space 4} .5631552{col 70}{space 3} 1.783543
+{txt}{space 13}7  {c |}{col 17}{res}{space 2}-.3424011{col 29}{space 2} .4378512{col 40}{space 1}   -0.78{col 49}{space 3}0.439{col 57}{space 4}-1.228785{col 70}{space 3} .5439823
+{txt}{space 12}11  {c |}{col 17}{res}{space 2} .3448499{col 29}{space 2} .1184256{col 40}{space 1}    2.91{col 49}{space 3}0.006{col 57}{space 4} .1051097{col 70}{space 3}   .58459
+{txt}{space 12}12  {c |}{col 17}{res}{space 2}   .34099{col 29}{space 2} .3321151{col 40}{space 1}    1.03{col 49}{space 3}0.311{col 57}{space 4}-.3313419{col 70}{space 3} 1.013322
+{txt}{space 12}13  {c |}{col 17}{res}{space 2} .7958949{col 29}{space 2} .1992862{col 40}{space 1}    3.99{col 49}{space 3}0.000{col 57}{space 4} .3924611{col 70}{space 3} 1.199329
+{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.0832942{col 29}{space 2} .2532949{col 40}{space 1}   -0.33{col 49}{space 3}0.744{col 57}{space 4}-.5960628{col 70}{space 3} .4294745
+{txt}{space 12}15  {c |}{col 17}{res}{space 2} .3416436{col 29}{space 2} .1397985{col 40}{space 1}    2.44{col 49}{space 3}0.019{col 57}{space 4} .0586364{col 70}{space 3} .6246507
+{txt}{space 12}16  {c |}{col 17}{res}{space 2}-.0533313{col 29}{space 2} .1657015{col 40}{space 1}   -0.32{col 49}{space 3}0.749{col 57}{space 4}-.3887764{col 70}{space 3} .2821138
+{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.6243708{col 29}{space 2} .1727031{col 40}{space 1}   -3.62{col 49}{space 3}0.001{col 57}{space 4}  -.97399{col 70}{space 3}-.2747516
 {txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .4678697{col 29}{space 2} .1544631{col 40}{space 1}    3.03{col 49}{space 3}0.004{col 57}{space 4} .1551756{col 70}{space 3} .7805639
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .7242706{col 29}{space 2} .1281272{col 40}{space 1}    5.65{col 49}{space 3}0.000{col 57}{space 4} .4648906{col 70}{space 3} .9836506
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} .4194258{col 29}{space 2} .1579465{col 40}{space 1}    2.66{col 49}{space 3}0.012{col 57}{space 4} .0996798{col 70}{space 3} .7391718
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} .4584833{col 29}{space 2} .1248203{col 40}{space 1}    3.67{col 49}{space 3}0.001{col 57}{space 4} .2057977{col 70}{space 3} .7111689
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .3765632{col 29}{space 2} .2277321{col 40}{space 1}    1.65{col 49}{space 3}0.106{col 57}{space 4}-.0844563{col 70}{space 3} .8375827
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2} -.071925{col 29}{space 2} .2128771{col 40}{space 1}   -0.34{col 49}{space 3}0.737{col 57}{space 4}-.5028723{col 70}{space 3} .3590222
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2}  2.03032{col 29}{space 2} .1257253{col 40}{space 1}   16.15{col 49}{space 3}0.000{col 57}{space 4} 1.775803{col 70}{space 3} 2.284838
+h_d_suplag1_bsl {c |}{col 17}{res}{space 2}  .490629{col 29}{space 2} .1499544{col 40}{space 1}    3.27{col 49}{space 3}0.002{col 57}{space 4} .1870622{col 70}{space 3} .7941959
+{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2}  .728364{col 29}{space 2} .1289227{col 40}{space 1}    5.65{col 49}{space 3}0.000{col 57}{space 4} .4673737{col 70}{space 3} .9893542
+{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} .4394501{col 29}{space 2} .1604528{col 40}{space 1}    2.74{col 49}{space 3}0.009{col 57}{space 4} .1146303{col 70}{space 3} .7642699
+{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} .5109848{col 29}{space 2} .1206167{col 40}{space 1}    4.24{col 49}{space 3}0.000{col 57}{space 4} .2668091{col 70}{space 3} .7551605
+{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .4613565{col 29}{space 2} .1703162{col 40}{space 1}    2.71{col 49}{space 3}0.010{col 57}{space 4} .1165693{col 70}{space 3} .8061436
+{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2}-.0588537{col 29}{space 2} .2060049{col 40}{space 1}   -0.29{col 49}{space 3}0.777{col 57}{space 4}-.4758887{col 70}{space 3} .3581814
+{txt}{space 10}_cons {c |}{col 17}{res}{space 2} 1.972777{col 29}{space 2} .1150787{col 40}{space 1}   17.14{col 49}{space 3}0.000{col 57}{space 4} 1.739812{col 70}{space 3} 2.205741
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 n_allPlot_~l {c |}{res}        275    2.650909    1.098252          1          6
 
@@ -833,11 +840,11 @@ n_allPlot_~l {c |}{res}        275    2.650909    1.098252          1          6
 
 {p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
 
-{txt}       F(  1,    38) ={res}    5.17
-{txt}{col 13}Prob > F ={res}    0.0287
+{txt}       F(  1,    38) ={res}    4.05
+{txt}{col 13}Prob > F ={res}    0.0513
 
 {txt}added scalar:
-             e(p_conv) =  {res}.02868475
+             e(p_conv) =  {res}.05127942
 
 {txt}Linear regression                               Number of obs     = {res}       515
                                                 {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
@@ -845,10 +852,10 @@ n_allPlot_~l {c |}{res}        275    2.650909    1.098252          1          6
                                                 {txt}R-squared         = {res}    0.1540
                                                 {txt}Root MSE          =    {res} 1.0583
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  n_culPlot_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  n_culPlot_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .1064528{col 29}{space 2} .1092478{col 40}{space 1}    0.97{col 49}{space 3}0.336{col 57}{space 4}-.1147078{col 70}{space 3} .3276134
 {txt}{space 15} {c |}
@@ -876,7 +883,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1315618{col 29}{space 2} .1253603{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 1.281553{col 29}{space 2} .2191119{col 40}{space 1}    5.85{col 49}{space 3}0.000{col 57}{space 4} .8379845{col 70}{space 3} 1.725122
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 n_culPlot_~l {c |}{res}        275    1.796364    1.064689          0          5
 
@@ -897,10 +904,10 @@ n_culPlot_~l {c |}{res}        275    1.796364    1.064689          0          5
                                                 {txt}R-squared         = {res}    0.0589
                                                 {txt}Root MSE          =    {res} 1.2063
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}t_sizeculPlot~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}t_sizeculPlot~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0544311{col 29}{space 2} .1558568{col 40}{space 1}    0.35{col 49}{space 3}0.729{col 57}{space 4}-.2610845{col 70}{space 3} .3699467
 {txt}{space 15} {c |}
@@ -928,7 +935,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1029563{col 29}{space 2} .2138143{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 1.217854{col 29}{space 2} .2378626{col 40}{space 1}    5.12{col 49}{space 3}0.000{col 57}{space 4} .7363263{col 70}{space 3} 1.699382
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 t_sizeculP~l {c |}{res}        275    1.293953    1.217315          0       7.45
 
@@ -944,321 +951,6 @@ t_sizeculP~l {c |}{res}        275    1.293953    1.217315          0       7.45
              e(p_conv) =  {res}.72883883
 {txt}(3 missing values generated)
 (5 real changes made)
-(5 real changes made)
-
-Linear regression                               Number of obs     = {res}       515
-                                                {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
-                                                {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.2514
-                                                {txt}Root MSE          =    {res} .39815
-
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
-{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 17}{c |}{col 29}    Robust
-{col 1} d_growrice_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
-{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .0667068{col 29}{space 2} .0518568{col 40}{space 1}    1.29{col 49}{space 3}0.206{col 57}{space 4}-.0382717{col 70}{space 3} .1716853
-{txt}{space 15} {c |}
-{space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2} .1666352{col 29}{space 2} .0928748{col 40}{space 1}    1.79{col 49}{space 3}0.081{col 57}{space 4}  -.02138{col 70}{space 3} .3546504
-{txt}{space 13}3  {c |}{col 17}{res}{space 2} .0491744{col 29}{space 2} .1143903{col 40}{space 1}    0.43{col 49}{space 3}0.670{col 57}{space 4}-.1823967{col 70}{space 3} .2807456
-{txt}{space 13}4  {c |}{col 17}{res}{space 2}-.0211517{col 29}{space 2} .1002009{col 40}{space 1}   -0.21{col 49}{space 3}0.834{col 57}{space 4}-.2239979{col 70}{space 3} .1816944
-{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.1263952{col 29}{space 2} .1348101{col 40}{space 1}   -0.94{col 49}{space 3}0.354{col 57}{space 4}-.3993039{col 70}{space 3} .1465135
-{txt}{space 13}6  {c |}{col 17}{res}{space 2} .2498937{col 29}{space 2} .1103813{col 40}{space 1}    2.26{col 49}{space 3}0.029{col 57}{space 4} .0264385{col 70}{space 3} .4733489
-{txt}{space 13}7  {c |}{col 17}{res}{space 2} .1528939{col 29}{space 2} .1386386{col 40}{space 1}    1.10{col 49}{space 3}0.277{col 57}{space 4}-.1277653{col 70}{space 3} .4335531
-{txt}{space 12}11  {c |}{col 17}{res}{space 2} .0867866{col 29}{space 2} .1286939{col 40}{space 1}    0.67{col 49}{space 3}0.504{col 57}{space 4}-.1737405{col 70}{space 3} .3473137
-{txt}{space 12}12  {c |}{col 17}{res}{space 2}-.0043713{col 29}{space 2} .1336231{col 40}{space 1}   -0.03{col 49}{space 3}0.974{col 57}{space 4} -.274877{col 70}{space 3} .2661345
-{txt}{space 12}13  {c |}{col 17}{res}{space 2}-.1163491{col 29}{space 2} .1283724{col 40}{space 1}   -0.91{col 49}{space 3}0.370{col 57}{space 4}-.3762253{col 70}{space 3} .1435272
-{txt}{space 12}14  {c |}{col 17}{res}{space 2} .0511815{col 29}{space 2} .1300608{col 40}{space 1}    0.39{col 49}{space 3}0.696{col 57}{space 4}-.2121127{col 70}{space 3} .3144758
-{txt}{space 12}15  {c |}{col 17}{res}{space 2}-.1146813{col 29}{space 2}  .147023{col 40}{space 1}   -0.78{col 49}{space 3}0.440{col 57}{space 4}-.4123137{col 70}{space 3} .1829511
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}-.2709958{col 29}{space 2} .1777252{col 40}{space 1}   -1.52{col 49}{space 3}0.136{col 57}{space 4}-.6307816{col 70}{space 3} .0887901
-{txt}{space 12}17  {c |}{col 17}{res}{space 2} .1612817{col 29}{space 2} .1207367{col 40}{space 1}    1.34{col 49}{space 3}0.190{col 57}{space 4}-.0831369{col 70}{space 3} .4057003
-{txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1530922{col 29}{space 2} .0737029{col 40}{space 1}    2.08{col 49}{space 3}0.045{col 57}{space 4} .0038884{col 70}{space 3} .3022959
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .4054461{col 29}{space 2}  .064353{col 40}{space 1}    6.30{col 49}{space 3}0.000{col 57}{space 4} .2751704{col 70}{space 3} .5357219
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} .4280647{col 29}{space 2}  .073185{col 40}{space 1}    5.85{col 49}{space 3}0.000{col 57}{space 4} .2799094{col 70}{space 3} .5762199
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} .2742028{col 29}{space 2} .0795346{col 40}{space 1}    3.45{col 49}{space 3}0.001{col 57}{space 4} .1131935{col 70}{space 3} .4352121
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .3618241{col 29}{space 2} .0738339{col 40}{space 1}    4.90{col 49}{space 3}0.000{col 57}{space 4} .2123552{col 70}{space 3} .5112931
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2} .3673215{col 29}{space 2} .0935858{col 40}{space 1}    3.92{col 49}{space 3}0.000{col 57}{space 4} .1778669{col 70}{space 3} .5567761
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} .3439469{col 29}{space 2} .1455232{col 40}{space 1}    2.36{col 49}{space 3}0.023{col 57}{space 4} .0493505{col 70}{space 3} .6385432
-{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
-{hline 13}{c +}{hline 57}
-d_growrice~l {c |}{res}        275    .6509091    .4775518          0          1
-
-{txt}added scalar:
-              e(m_ctr) =  {res}.65090909
-
-{p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
-
-{txt}       F(  1,    38) ={res}    1.65
-{txt}{col 13}Prob > F ={res}    0.2061
-
-{txt}added scalar:
-             e(p_conv) =  {res}.20609767
-
-{txt}Linear regression                               Number of obs     = {res}       515
-                                                {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
-                                                {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.2742
-                                                {txt}Root MSE          =    {res} .82622
-
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
-{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 17}{c |}{col 29}    Robust
-{col 1}n_riceplot_uc~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
-{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .0849386{col 29}{space 2} .0993757{col 40}{space 1}    0.85{col 49}{space 3}0.398{col 57}{space 4} -.116237{col 70}{space 3} .2861143
-{txt}{space 15} {c |}
-{space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2} .2609046{col 29}{space 2} .1448392{col 40}{space 1}    1.80{col 49}{space 3}0.080{col 57}{space 4}-.0323071{col 70}{space 3} .5541163
-{txt}{space 13}3  {c |}{col 17}{res}{space 2} .0748808{col 29}{space 2} .1957338{col 40}{space 1}    0.38{col 49}{space 3}0.704{col 57}{space 4}-.3213616{col 70}{space 3} .4711232
-{txt}{space 13}4  {c |}{col 17}{res}{space 2}-.3856066{col 29}{space 2} .1657296{col 40}{space 1}   -2.33{col 49}{space 3}0.025{col 57}{space 4}-.7211086{col 70}{space 3}-.0501047
-{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.2836901{col 29}{space 2} .1715469{col 40}{space 1}   -1.65{col 49}{space 3}0.106{col 57}{space 4}-.6309688{col 70}{space 3} .0635885
-{txt}{space 13}6  {c |}{col 17}{res}{space 2} .5054341{col 29}{space 2} .2326725{col 40}{space 1}    2.17{col 49}{space 3}0.036{col 57}{space 4} .0344133{col 70}{space 3} .9764549
-{txt}{space 13}7  {c |}{col 17}{res}{space 2} .3148422{col 29}{space 2} .5877983{col 40}{space 1}    0.54{col 49}{space 3}0.595{col 57}{space 4}-.8750932{col 70}{space 3} 1.504778
-{txt}{space 12}11  {c |}{col 17}{res}{space 2} .1520884{col 29}{space 2} .1897464{col 40}{space 1}    0.80{col 49}{space 3}0.428{col 57}{space 4}-.2320332{col 70}{space 3} .5362099
-{txt}{space 12}12  {c |}{col 17}{res}{space 2}-.1622095{col 29}{space 2} .2228909{col 40}{space 1}   -0.73{col 49}{space 3}0.471{col 57}{space 4}-.6134286{col 70}{space 3} .2890096
-{txt}{space 12}13  {c |}{col 17}{res}{space 2} -.127967{col 29}{space 2} .1717681{col 40}{space 1}   -0.74{col 49}{space 3}0.461{col 57}{space 4}-.4756934{col 70}{space 3} .2197595
-{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.2038908{col 29}{space 2}  .205146{col 40}{space 1}   -0.99{col 49}{space 3}0.327{col 57}{space 4}-.6191871{col 70}{space 3} .2114055
-{txt}{space 12}15  {c |}{col 17}{res}{space 2}-.5434376{col 29}{space 2} .1556275{col 40}{space 1}   -3.49{col 49}{space 3}0.001{col 57}{space 4}-.8584891{col 70}{space 3}-.2283861
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}-.5471998{col 29}{space 2} .2683654{col 40}{space 1}   -2.04{col 49}{space 3}0.048{col 57}{space 4}-1.090477{col 70}{space 3}-.0039225
-{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.2994578{col 29}{space 2} .1786412{col 40}{space 1}   -1.68{col 49}{space 3}0.102{col 57}{space 4}-.6610979{col 70}{space 3} .0621824
-{txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1839119{col 29}{space 2} .1098279{col 40}{space 1}    1.67{col 49}{space 3}0.102{col 57}{space 4} -.038423{col 70}{space 3} .4062469
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .8652689{col 29}{space 2} .0851773{col 40}{space 1}   10.16{col 49}{space 3}0.000{col 57}{space 4} .6928364{col 70}{space 3} 1.037701
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} .7828287{col 29}{space 2} .1306293{col 40}{space 1}    5.99{col 49}{space 3}0.000{col 57}{space 4} .5183836{col 70}{space 3} 1.047274
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2}  .683931{col 29}{space 2} .1495103{col 40}{space 1}    4.57{col 49}{space 3}0.000{col 57}{space 4} .3812632{col 70}{space 3} .9865988
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .7793902{col 29}{space 2}  .142162{col 40}{space 1}    5.48{col 49}{space 3}0.000{col 57}{space 4} .4915983{col 70}{space 3} 1.067182
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2} .7063276{col 29}{space 2} .1335365{col 40}{space 1}    5.29{col 49}{space 3}0.000{col 57}{space 4} .4359971{col 70}{space 3}  .976658
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} .4316904{col 29}{space 2} .1822874{col 40}{space 1}    2.37{col 49}{space 3}0.023{col 57}{space 4} .0626688{col 70}{space 3} .8007121
-{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
-{hline 13}{c +}{hline 57}
-n_riceplot~l {c |}{res}        275    .9272727    .8889949          0          4
-
-{txt}added scalar:
-              e(m_ctr) =  {res}.92727273
-
-{p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
-
-{txt}       F(  1,    38) ={res}    0.73
-{txt}{col 13}Prob > F ={res}    0.3981
-
-{txt}added scalar:
-             e(p_conv) =  {res}.39806169
-
-{txt}Linear regression                               Number of obs     = {res}       515
-                                                {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
-                                                {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.1360
-                                                {txt}Root MSE          =    {res} .73996
-
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
-{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 17}{c |}{col 29}    Robust
-{col 1}t_plot_area_u~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
-{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2}  .047186{col 29}{space 2} .1017853{col 40}{space 1}    0.46{col 49}{space 3}0.646{col 57}{space 4}-.1588675{col 70}{space 3} .2532395
-{txt}{space 15} {c |}
-{space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2}-.1156061{col 29}{space 2} .1174098{col 40}{space 1}   -0.98{col 49}{space 3}0.331{col 57}{space 4}-.3532898{col 70}{space 3} .1220776
-{txt}{space 13}3  {c |}{col 17}{res}{space 2}  .014197{col 29}{space 2} .2022748{col 40}{space 1}    0.07{col 49}{space 3}0.944{col 57}{space 4} -.395287{col 70}{space 3}  .423681
-{txt}{space 13}4  {c |}{col 17}{res}{space 2}  -.20459{col 29}{space 2} .1377175{col 40}{space 1}   -1.49{col 49}{space 3}0.146{col 57}{space 4}-.4833845{col 70}{space 3} .0742045
-{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.1792435{col 29}{space 2} .1325308{col 40}{space 1}   -1.35{col 49}{space 3}0.184{col 57}{space 4}-.4475381{col 70}{space 3} .0890511
-{txt}{space 13}6  {c |}{col 17}{res}{space 2} .9089454{col 29}{space 2} .4824751{col 40}{space 1}    1.88{col 49}{space 3}0.067{col 57}{space 4}-.0677744{col 70}{space 3} 1.885665
-{txt}{space 13}7  {c |}{col 17}{res}{space 2}-.0489754{col 29}{space 2}   .33202{col 40}{space 1}   -0.15{col 49}{space 3}0.884{col 57}{space 4}-.7211147{col 70}{space 3} .6231639
-{txt}{space 12}11  {c |}{col 17}{res}{space 2}-.0183493{col 29}{space 2} .2327394{col 40}{space 1}   -0.08{col 49}{space 3}0.938{col 57}{space 4}-.4895057{col 70}{space 3}  .452807
-{txt}{space 12}12  {c |}{col 17}{res}{space 2}-.1186421{col 29}{space 2} .1948535{col 40}{space 1}   -0.61{col 49}{space 3}0.546{col 57}{space 4}-.5131025{col 70}{space 3} .2758183
-{txt}{space 12}13  {c |}{col 17}{res}{space 2} -.264382{col 29}{space 2} .1754435{col 40}{space 1}   -1.51{col 49}{space 3}0.140{col 57}{space 4}-.6195488{col 70}{space 3} .0907848
-{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.2745026{col 29}{space 2} .2164997{col 40}{space 1}   -1.27{col 49}{space 3}0.213{col 57}{space 4}-.7127832{col 70}{space 3} .1637781
-{txt}{space 12}15  {c |}{col 17}{res}{space 2}-.1344989{col 29}{space 2} .2180049{col 40}{space 1}   -0.62{col 49}{space 3}0.541{col 57}{space 4}-.5758267{col 70}{space 3}  .306829
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}-.5367042{col 29}{space 2} .2051732{col 40}{space 1}   -2.62{col 49}{space 3}0.013{col 57}{space 4}-.9520556{col 70}{space 3}-.1213527
-{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.6347437{col 29}{space 2} .1918022{col 40}{space 1}   -3.31{col 49}{space 3}0.002{col 57}{space 4}-1.023027{col 70}{space 3}-.2464604
-{txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1874496{col 29}{space 2} .1196115{col 40}{space 1}    1.57{col 49}{space 3}0.125{col 57}{space 4}-.0546912{col 70}{space 3} .4295904
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .4493984{col 29}{space 2} .0896393{col 40}{space 1}    5.01{col 49}{space 3}0.000{col 57}{space 4} .2679331{col 70}{space 3} .6308637
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} .5434013{col 29}{space 2} .1150151{col 40}{space 1}    4.72{col 49}{space 3}0.000{col 57}{space 4} .3105653{col 70}{space 3} .7762372
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} .3349917{col 29}{space 2}   .09085{col 40}{space 1}    3.69{col 49}{space 3}0.001{col 57}{space 4} .1510755{col 70}{space 3} .5189079
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .4562799{col 29}{space 2} .1414366{col 40}{space 1}    3.23{col 49}{space 3}0.003{col 57}{space 4} .1699564{col 70}{space 3} .7426034
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2}  .468812{col 29}{space 2} .1088934{col 40}{space 1}    4.31{col 49}{space 3}0.000{col 57}{space 4} .2483689{col 70}{space 3} .6892551
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} .3666565{col 29}{space 2} .1778886{col 40}{space 1}    2.06{col 49}{space 3}0.046{col 57}{space 4} .0065399{col 70}{space 3}  .726773
-{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
-{hline 13}{c +}{hline 57}
-t_plot_are~l {c |}{res}        275    .6228079    .7831991          0      4.515
-
-{txt}added scalar:
-              e(m_ctr) =  {res}.62280794
-
-{p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
-
-{txt}       F(  1,    38) ={res}    0.21
-{txt}{col 13}Prob > F ={res}    0.6456
-
-{txt}added scalar:
-             e(p_conv) =  {res}.64559069
-
-{txt}Linear regression                               Number of obs     = {res}       515
-                                                {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
-                                                {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.1471
-                                                {txt}Root MSE          =    {res} .46932
-
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
-{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 17}{c |}{col 29}    Robust
-{col 1}harv_any_hh_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
-{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .0186258{col 29}{space 2} .0445258{col 40}{space 1}    0.42{col 49}{space 3}0.678{col 57}{space 4} -.071512{col 70}{space 3} .1087636
-{txt}{space 15} {c |}
-{space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2} .1648732{col 29}{space 2} .0754087{col 40}{space 1}    2.19{col 49}{space 3}0.035{col 57}{space 4} .0122162{col 70}{space 3} .3175303
-{txt}{space 13}3  {c |}{col 17}{res}{space 2}-.1051879{col 29}{space 2} .0982641{col 40}{space 1}   -1.07{col 49}{space 3}0.291{col 57}{space 4}-.3041131{col 70}{space 3} .0937373
-{txt}{space 13}4  {c |}{col 17}{res}{space 2}-.1942106{col 29}{space 2}  .047719{col 40}{space 1}   -4.07{col 49}{space 3}0.000{col 57}{space 4}-.2908125{col 70}{space 3}-.0976086
-{txt}{space 13}5  {c |}{col 17}{res}{space 2} .0217565{col 29}{space 2} .0840098{col 40}{space 1}    0.26{col 49}{space 3}0.797{col 57}{space 4}-.1483125{col 70}{space 3} .1918255
-{txt}{space 13}6  {c |}{col 17}{res}{space 2} -.014557{col 29}{space 2} .0471523{col 40}{space 1}   -0.31{col 49}{space 3}0.759{col 57}{space 4}-.1100117{col 70}{space 3} .0808978
-{txt}{space 13}7  {c |}{col 17}{res}{space 2} .2181704{col 29}{space 2} .2361051{col 40}{space 1}    0.92{col 49}{space 3}0.361{col 57}{space 4}-.2597994{col 70}{space 3} .6961401
-{txt}{space 12}11  {c |}{col 17}{res}{space 2} .1615132{col 29}{space 2} .0979019{col 40}{space 1}    1.65{col 49}{space 3}0.107{col 57}{space 4}-.0366788{col 70}{space 3} .3597053
-{txt}{space 12}12  {c |}{col 17}{res}{space 2} .0183493{col 29}{space 2} .0830541{col 40}{space 1}    0.22{col 49}{space 3}0.826{col 57}{space 4}-.1497849{col 70}{space 3} .1864835
-{txt}{space 12}13  {c |}{col 17}{res}{space 2} .0479083{col 29}{space 2} .0982245{col 40}{space 1}    0.49{col 49}{space 3}0.629{col 57}{space 4}-.1509369{col 70}{space 3} .2467535
-{txt}{space 12}14  {c |}{col 17}{res}{space 2} .0797222{col 29}{space 2} .0930919{col 40}{space 1}    0.86{col 49}{space 3}0.397{col 57}{space 4}-.1087325{col 70}{space 3} .2681769
-{txt}{space 12}15  {c |}{col 17}{res}{space 2}-.1755399{col 29}{space 2} .1110322{col 40}{space 1}   -1.58{col 49}{space 3}0.122{col 57}{space 4}-.4003127{col 70}{space 3}  .049233
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}-.1886494{col 29}{space 2} .1451842{col 40}{space 1}   -1.30{col 49}{space 3}0.202{col 57}{space 4}-.4825595{col 70}{space 3} .1052606
-{txt}{space 12}17  {c |}{col 17}{res}{space 2} .4719526{col 29}{space 2} .1305128{col 40}{space 1}    3.62{col 49}{space 3}0.001{col 57}{space 4} .2077432{col 70}{space 3} .7361621
-{txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1689968{col 29}{space 2}  .056505{col 40}{space 1}    2.99{col 49}{space 3}0.005{col 57}{space 4} .0546084{col 70}{space 3} .2833852
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .2561068{col 29}{space 2} .0657284{col 40}{space 1}    3.90{col 49}{space 3}0.000{col 57}{space 4} .1230466{col 70}{space 3}  .389167
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2}  .329567{col 29}{space 2} .0819919{col 40}{space 1}    4.02{col 49}{space 3}0.000{col 57}{space 4}  .163583{col 70}{space 3}  .495551
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} .1607536{col 29}{space 2} .0634084{col 40}{space 1}    2.54{col 49}{space 3}0.015{col 57}{space 4} .0323899{col 70}{space 3} .2891172
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .3763837{col 29}{space 2} .0704533{col 40}{space 1}    5.34{col 49}{space 3}0.000{col 57}{space 4} .2337584{col 70}{space 3} .5190091
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2} .2757539{col 29}{space 2} .1035039{col 40}{space 1}    2.66{col 49}{space 3}0.011{col 57}{space 4} .0662212{col 70}{space 3} .4852867
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1798546{col 29}{space 2} .0682602{col 40}{space 1}    2.63{col 49}{space 3}0.012{col 57}{space 4}  .041669{col 70}{space 3} .3180402
-{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
-{hline 13}{c +}{hline 57}
-harv_any_h~l {c |}{res}        275    .4072727    .4922222          0          1
-
-{txt}added scalar:
-              e(m_ctr) =  {res}.40727273
-
-{p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
-
-{txt}       F(  1,    38) ={res}    0.17
-{txt}{col 13}Prob > F ={res}    0.6781
-
-{txt}added scalar:
-             e(p_conv) =  {res}.67807194
-
-{txt}Linear regression                               Number of obs     = {res}       515
-                                                {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
-                                                {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.0380
-                                                {txt}Root MSE          =    {res} .30681
-
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
-{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 17}{c |}{col 29}    Robust
-{col 1}harv_lost_hh_~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
-{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .0516468{col 29}{space 2}  .040769{col 40}{space 1}    1.27{col 49}{space 3}0.213{col 57}{space 4}-.0308858{col 70}{space 3} .1341793
-{txt}{space 15} {c |}
-{space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2} .0071099{col 29}{space 2} .0555383{col 40}{space 1}    0.13{col 49}{space 3}0.899{col 57}{space 4}-.1053215{col 70}{space 3} .1195412
-{txt}{space 13}3  {c |}{col 17}{res}{space 2} .0415726{col 29}{space 2} .0817041{col 40}{space 1}    0.51{col 49}{space 3}0.614{col 57}{space 4}-.1238288{col 70}{space 3}  .206974
-{txt}{space 13}4  {c |}{col 17}{res}{space 2}-.0124024{col 29}{space 2} .0775473{col 40}{space 1}   -0.16{col 49}{space 3}0.874{col 57}{space 4}-.1693887{col 70}{space 3}  .144584
-{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.1388332{col 29}{space 2} .0771594{col 40}{space 1}   -1.80{col 49}{space 3}0.080{col 57}{space 4}-.2950343{col 70}{space 3} .0173678
-{txt}{space 13}6  {c |}{col 17}{res}{space 2}-.0009749{col 29}{space 2} .1085104{col 40}{space 1}   -0.01{col 49}{space 3}0.993{col 57}{space 4}-.2206428{col 70}{space 3}  .218693
-{txt}{space 13}7  {c |}{col 17}{res}{space 2} -.130408{col 29}{space 2} .0590395{col 40}{space 1}   -2.21{col 49}{space 3}0.033{col 57}{space 4}-.2499271{col 70}{space 3}-.0108888
-{txt}{space 12}11  {c |}{col 17}{res}{space 2}-.0695578{col 29}{space 2} .0762714{col 40}{space 1}   -0.91{col 49}{space 3}0.368{col 57}{space 4}-.2239611{col 70}{space 3} .0848455
-{txt}{space 12}12  {c |}{col 17}{res}{space 2}-.0244515{col 29}{space 2} .0751735{col 40}{space 1}   -0.33{col 49}{space 3}0.747{col 57}{space 4}-.1766323{col 70}{space 3} .1277294
-{txt}{space 12}13  {c |}{col 17}{res}{space 2}-.0746847{col 29}{space 2} .0700992{col 40}{space 1}   -1.07{col 49}{space 3}0.293{col 57}{space 4} -.216593{col 70}{space 3} .0672237
-{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.0023633{col 29}{space 2} .0730916{col 40}{space 1}   -0.03{col 49}{space 3}0.974{col 57}{space 4}-.1503295{col 70}{space 3}  .145603
-{txt}{space 12}15  {c |}{col 17}{res}{space 2}-.1131876{col 29}{space 2}  .070073{col 40}{space 1}   -1.62{col 49}{space 3}0.115{col 57}{space 4} -.255043{col 70}{space 3} .0286677
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}  .000051{col 29}{space 2} .0934718{col 40}{space 1}    0.00{col 49}{space 3}1.000{col 57}{space 4}-.1891728{col 70}{space 3} .1892748
-{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.1251476{col 29}{space 2}  .081742{col 40}{space 1}   -1.53{col 49}{space 3}0.134{col 57}{space 4}-.2906257{col 70}{space 3} .0403305
-{txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0315551{col 29}{space 2} .0535758{col 40}{space 1}    0.59{col 49}{space 3}0.559{col 57}{space 4}-.0769033{col 70}{space 3} .1400135
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .0326244{col 29}{space 2} .0428123{col 40}{space 1}    0.76{col 49}{space 3}0.451{col 57}{space 4}-.0540446{col 70}{space 3} .1192934
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} -.012657{col 29}{space 2}  .058351{col 40}{space 1}   -0.22{col 49}{space 3}0.829{col 57}{space 4}-.1307824{col 70}{space 3} .1054684
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} .0026207{col 29}{space 2} .0472796{col 40}{space 1}    0.06{col 49}{space 3}0.956{col 57}{space 4}-.0930919{col 70}{space 3} .0983332
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .0284447{col 29}{space 2} .0574554{col 40}{space 1}    0.50{col 49}{space 3}0.623{col 57}{space 4}-.0878677{col 70}{space 3} .1447572
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2}-.0322399{col 29}{space 2} .0323729{col 40}{space 1}   -1.00{col 49}{space 3}0.326{col 57}{space 4}-.0977754{col 70}{space 3} .0332956
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} .0861578{col 29}{space 2} .0854895{col 40}{space 1}    1.01{col 49}{space 3}0.320{col 57}{space 4}-.0869067{col 70}{space 3} .2592223
-{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
-{hline 13}{c +}{hline 57}
-harv_lost_~l {c |}{res}        275    .0872727    .2827489          0          1
-
-{txt}added scalar:
-              e(m_ctr) =  {res}.08727273
-
-{p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
-
-{txt}       F(  1,    38) ={res}    1.60
-{txt}{col 13}Prob > F ={res}    0.2129
-
-{txt}added scalar:
-             e(p_conv) =  {res}.21293133
-
-{txt}Linear regression                               Number of obs     = {res}       355
-                                                {txt}{help j_robustsingular:F(18, 35) }        =  {res}        .
-                                                {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.0971
-                                                {txt}Root MSE          =    {res} 2.6962
-
-{txt}{ralign 81:(Std. Err. adjusted for {res:36} clusters in habitation_old_bsl)}
-{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 17}{c |}{col 29}    Robust
-{col 1} fstMonth13_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
-{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .3502633{col 29}{space 2} .3162189{col 40}{space 1}    1.11{col 49}{space 3}0.276{col 57}{space 4}-.2916951{col 70}{space 3} .9922218
-{txt}{space 15} {c |}
-{space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2}-.5643145{col 29}{space 2} .4978484{col 40}{space 1}   -1.13{col 49}{space 3}0.265{col 57}{space 4}-1.575001{col 70}{space 3} .4463716
-{txt}{space 13}3  {c |}{col 17}{res}{space 2} .4255961{col 29}{space 2} .6920212{col 40}{space 1}    0.62{col 49}{space 3}0.543{col 57}{space 4}-.9792816{col 70}{space 3} 1.830474
-{txt}{space 13}4  {c |}{col 17}{res}{space 2} .5984062{col 29}{space 2} .5053003{col 40}{space 1}    1.18{col 49}{space 3}0.244{col 57}{space 4}-.4274079{col 70}{space 3}  1.62422
-{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.3779532{col 29}{space 2} .5705461{col 40}{space 1}   -0.66{col 49}{space 3}0.512{col 57}{space 4}-1.536223{col 70}{space 3}  .780317
-{txt}{space 13}6  {c |}{col 17}{res}{space 2} 1.018917{col 29}{space 2} .9749195{col 40}{space 1}    1.05{col 49}{space 3}0.303{col 57}{space 4}-.9602747{col 70}{space 3} 2.998109
-{txt}{space 13}7  {c |}{col 17}{res}{space 2}-.2748394{col 29}{space 2} 1.080288{col 40}{space 1}   -0.25{col 49}{space 3}0.801{col 57}{space 4} -2.46794{col 70}{space 3} 1.918261
-{txt}{space 12}11  {c |}{col 17}{res}{space 2} -1.54123{col 29}{space 2} .7754537{col 40}{space 1}   -1.99{col 49}{space 3}0.055{col 57}{space 4}-3.115484{col 70}{space 3}  .033025
-{txt}{space 12}12  {c |}{col 17}{res}{space 2}-.3772263{col 29}{space 2} .4859849{col 40}{space 1}   -0.78{col 49}{space 3}0.443{col 57}{space 4}-1.363828{col 70}{space 3} .6093756
-{txt}{space 12}13  {c |}{col 17}{res}{space 2}-1.774821{col 29}{space 2} .7261798{col 40}{space 1}   -2.44{col 49}{space 3}0.020{col 57}{space 4}-3.249044{col 70}{space 3}-.3005973
-{txt}{space 12}14  {c |}{col 17}{res}{space 2}  .342828{col 29}{space 2} .7441424{col 40}{space 1}    0.46{col 49}{space 3}0.648{col 57}{space 4}-1.167861{col 70}{space 3} 1.853517
-{txt}{space 12}15  {c |}{col 17}{res}{space 2} .6802806{col 29}{space 2} .8530864{col 40}{space 1}    0.80{col 49}{space 3}0.431{col 57}{space 4}-1.051577{col 70}{space 3} 2.412138
-{txt}{space 12}16  {c |}{col 17}{res}{space 2} .8774316{col 29}{space 2} .5360889{col 40}{space 1}    1.64{col 49}{space 3}0.111{col 57}{space 4}-.2108868{col 70}{space 3}  1.96575
-{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.2522689{col 29}{space 2} .8312164{col 40}{space 1}   -0.30{col 49}{space 3}0.763{col 57}{space 4}-1.939728{col 70}{space 3}  1.43519
-{txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2} -.915314{col 29}{space 2} .3923645{col 40}{space 1}   -2.33{col 49}{space 3}0.026{col 57}{space 4}-1.711856{col 70}{space 3}-.1187717
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2}-.1744012{col 29}{space 2} .4043554{col 40}{space 1}   -0.43{col 49}{space 3}0.669{col 57}{space 4}-.9952863{col 70}{space 3}  .646484
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2}-.1010203{col 29}{space 2} .5867573{col 40}{space 1}   -0.17{col 49}{space 3}0.864{col 57}{space 4}-1.292201{col 70}{space 3}  1.09016
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} .6395789{col 29}{space 2} .4066855{col 40}{space 1}    1.57{col 49}{space 3}0.125{col 57}{space 4}-.1860366{col 70}{space 3} 1.465194
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2}-.0961542{col 29}{space 2} .3036496{col 40}{space 1}   -0.32{col 49}{space 3}0.753{col 57}{space 4}-.7125956{col 70}{space 3} .5202872
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2}  .437684{col 29}{space 2}   .59312{col 40}{space 1}    0.74{col 49}{space 3}0.465{col 57}{space 4}-.7664136{col 70}{space 3} 1.641782
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} 6.003026{col 29}{space 2} .6704675{col 40}{space 1}    8.95{col 49}{space 3}0.000{col 57}{space 4} 4.641904{col 70}{space 3} 7.364147
-{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
-{hline 13}{c +}{hline 57}
-fstMonth13~l {c |}{res}        171    5.666667    2.940588          1         12
-
-{txt}added scalar:
-              e(m_ctr) =  {res}5.6666667
-
-{p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
-
-{txt}       F(  1,    35) ={res}    1.23
-{txt}{col 13}Prob > F ={res}    0.2756
-
-{txt}added scalar:
-             e(p_conv) =  {res}.27556261
-{txt}(3 missing values generated)
-(5 real changes made)
 (275 real changes made)
 (3 missing values generated)
 (5 real changes made)
@@ -1270,10 +962,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.0545
                                                 {txt}Root MSE          =    {res} 164.29
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}other_harvest~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}other_harvest~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 19.02901{col 29}{space 2} 15.10656{col 40}{space 1}    1.26{col 49}{space 3}0.215{col 57}{space 4}-11.55263{col 70}{space 3} 49.61064
 {txt}{space 15} {c |}
@@ -1301,7 +993,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 29.36552{col 29}{space 2} 19.25019{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 102.3339{col 29}{space 2} 27.61801{col 40}{space 1}    3.71{col 49}{space 3}0.001{col 57}{space 4} 46.42419{col 70}{space 3} 158.2437
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 other_harv~l {c |}{res}        275    80.97203    167.9523          0        990
 
@@ -1322,10 +1014,10 @@ other_harv~l {c |}{res}        275    80.97203    167.9523          0        990
                                                 {txt}R-squared         = {res}    0.0610
                                                 {txt}Root MSE          =    {res} 96.137
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}other_sale_va~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}other_sale_va~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 5.785205{col 29}{space 2} 8.346129{col 40}{space 1}    0.69{col 49}{space 3}0.492{col 57}{space 4}-11.11065{col 70}{space 3} 22.68106
 {txt}{space 15} {c |}
@@ -1353,7 +1045,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 10.51961{col 29}{space 2} 7.837263{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 45.17302{col 29}{space 2} 19.67011{col 40}{space 1}    2.30{col 49}{space 3}0.027{col 57}{space 4} 5.352964{col 70}{space 3} 84.99308
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 other_sale~l {c |}{res}        275      36.672    99.92444          0      641.3
 
@@ -1392,10 +1084,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.0704
                                                 {txt}Root MSE          =    {res} 857.59
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}t_harvest_std~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}t_harvest_std~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}  .226307{col 29}{space 2} 87.42419{col 40}{space 1}    0.00{col 49}{space 3}0.998{col 57}{space 4}-176.7547{col 70}{space 3} 177.2073
 {txt}{space 15} {c |}
@@ -1423,7 +1115,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 357.6212{col 29}{space 2} 132.1866{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 167.3928{col 29}{space 2} 116.3107{col 40}{space 1}    1.44{col 49}{space 3}0.158{col 57}{space 4}-68.06595{col 70}{space 3} 402.8516
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 t_harvest_~l {c |}{res}        275    492.7873    928.0627          0       4320
 
@@ -1444,10 +1136,10 @@ t_harvest_~l {c |}{res}        275    492.7873    928.0627          0       4320
                                                 {txt}R-squared         = {res}    0.0694
                                                 {txt}Root MSE          =    {res} 979.54
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}HH_riceHaYear~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}HH_riceHaYear~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 97.33502{col 29}{space 2}  129.481{col 40}{space 1}    0.75{col 49}{space 3}0.457{col 57}{space 4}-164.7857{col 70}{space 3} 359.4557
 {txt}{space 15} {c |}
@@ -1475,7 +1167,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 342.0142{col 29}{space 2} 135.4497{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 327.0734{col 29}{space 2} 223.6265{col 40}{space 1}    1.46{col 49}{space 3}0.152{col 57}{space 4}-125.6348{col 70}{space 3} 779.7817
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 HH_riceHaY~l {c |}{res}        275    611.0213    961.4411          0   4500.567
 
@@ -1496,10 +1188,10 @@ HH_riceHaY~l {c |}{res}        275    611.0213    961.4411          0   4500.567
                                                 {txt}R-squared         = {res}    0.0739
                                                 {txt}Root MSE          =    {res} 522.78
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}t_prod_value_~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}t_prod_value_~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 4.160725{col 29}{space 2}  52.2403{col 40}{space 1}    0.08{col 49}{space 3}0.937{col 57}{space 4}-101.5942{col 70}{space 3} 109.9157
 {txt}{space 15} {c |}
@@ -1527,7 +1219,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 173.6975{col 29}{space 2}  78.8245{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 77.06257{col 29}{space 2} 79.60854{col 40}{space 1}    0.97{col 49}{space 3}0.339{col 57}{space 4} -84.0965{col 70}{space 3} 238.2216
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 t_prod_val~l {c |}{res}        275     303.497    555.1808          0       2640
 
@@ -1548,10 +1240,10 @@ t_prod_val~l {c |}{res}        275     303.497    555.1808          0       2640
                                                 {txt}R-squared         = {res}    0.0499
                                                 {txt}Root MSE          =    {res} 419.86
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}profit_1_uc_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}profit_1_uc_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-26.44868{col 29}{space 2} 37.51068{col 40}{space 1}   -0.71{col 49}{space 3}0.485{col 57}{space 4}-102.3851{col 70}{space 3} 49.48772
 {txt}{space 15} {c |}
@@ -1579,7 +1271,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 55.79683{col 29}{space 2} 61.61211{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}-73.93674{col 29}{space 2}  61.1914{col 40}{space 1}   -1.21{col 49}{space 3}0.234{col 57}{space 4}-197.8122{col 70}{space 3} 49.93878
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 profit_1_u~l {c |}{res}        275    11.29672    408.2393  -1897.588   1291.086
 
@@ -1600,10 +1292,10 @@ profit_1_u~l {c |}{res}        275    11.29672    408.2393  -1897.588   1291.086
                                                 {txt}R-squared         = {res}    0.1328
                                                 {txt}Root MSE          =    {res} .47114
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}h_sold_rice_u~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}h_sold_rice_u~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0085845{col 29}{space 2}   .04214{col 40}{space 1}    0.20{col 49}{space 3}0.840{col 57}{space 4}-.0767234{col 70}{space 3} .0938923
 {txt}{space 15} {c |}
@@ -1631,7 +1323,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}  .168463{col 29}{space 2} .0583854{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1662804{col 29}{space 2} .0697435{col 40}{space 1}    2.38{col 49}{space 3}0.022{col 57}{space 4} .0250921{col 70}{space 3} .3074686
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 h_sold_ric~l {c |}{res}        275    .3927273    .4892474          0          1
 
@@ -1652,10 +1344,10 @@ h_sold_ric~l {c |}{res}        275    .3927273    .4892474          0          1
                                                 {txt}R-squared         = {res}    0.0642
                                                 {txt}Root MSE          =    {res} 683.84
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}t_sale_std_kg~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}t_sale_std_kg~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-14.92432{col 29}{space 2}  72.7086{col 40}{space 1}   -0.21{col 49}{space 3}0.838{col 57}{space 4}-162.1152{col 70}{space 3} 132.2665
 {txt}{space 15} {c |}
@@ -1683,7 +1375,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 283.6462{col 29}{space 2} 109.5387{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 101.1648{col 29}{space 2} 101.9943{col 40}{space 1}    0.99{col 49}{space 3}0.328{col 57}{space 4} -105.312{col 70}{space 3} 307.6415
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 t_sale_std~l {c |}{res}        275    371.8675    754.9895          0       3657
 
@@ -1704,10 +1396,10 @@ t_sale_std~l {c |}{res}        275    371.8675    754.9895          0       3657
                                                 {txt}R-squared         = {res}    0.0661
                                                 {txt}Root MSE          =    {res} 416.63
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}t_sale_value_~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}t_sale_value_~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-3.657134{col 29}{space 2} 43.42861{col 40}{space 1}   -0.08{col 49}{space 3}0.933{col 57}{space 4}-91.57376{col 70}{space 3}  84.2595
 {txt}{space 15} {c |}
@@ -1735,7 +1427,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}  145.377{col 29}{space 2}  65.5752{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 43.35425{col 29}{space 2} 68.26648{col 40}{space 1}    0.64{col 49}{space 3}0.529{col 57}{space 4}-94.84401{col 70}{space 3} 181.5525
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 t_sale_val~l {c |}{res}        275     229.338    451.5489          0       2332
 
@@ -1756,10 +1448,10 @@ t_sale_val~l {c |}{res}        275     229.338    451.5489          0       2332
                                                 {txt}R-squared         = {res}    0.2125
                                                 {txt}Root MSE          =    {res}  .4171
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  irrigated_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  irrigated_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0273023{col 29}{space 2} .0472413{col 40}{space 1}    0.58{col 49}{space 3}0.567{col 57}{space 4}-.0683328{col 70}{space 3} .1229374
 {txt}{space 15} {c |}
@@ -1787,7 +1479,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0822552{col 29}{space 2} .0702878{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .4543646{col 29}{space 2} .1440002{col 40}{space 1}    3.16{col 49}{space 3}0.003{col 57}{space 4} .1628515{col 70}{space 3} .7458777
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 irrigated_~l {c |}{res}        275    .6472727    .4786899          0          1
 
@@ -1808,10 +1500,10 @@ irrigated_~l {c |}{res}        275    .6472727    .4786899          0          1
                                                 {txt}R-squared         = {res}    0.8920
                                                 {txt}Root MSE          =    {res} .16758
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}access_water_~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}access_water_~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.1105223{col 29}{space 2} .0708643{col 40}{space 1}   -1.56{col 49}{space 3}0.127{col 57}{space 4}-.2539794{col 70}{space 3} .0329349
 {txt}{space 15} {c |}
@@ -1839,7 +1531,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0475331{col 29}{space 2} .0318349{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 1.077886{col 29}{space 2} .0497012{col 40}{space 1}   21.69{col 49}{space 3}0.000{col 57}{space 4} .9772709{col 70}{space 3}   1.1785
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 access_wat~l {c |}{res}        275    .4945455    .5008818          0          1
 
@@ -1875,10 +1567,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.0723
                                                 {txt}Root MSE          =    {res} 115.12
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}n_familylabor~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}n_familylabor~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 27.10552{col 29}{space 2} 11.74585{col 40}{space 1}    2.31{col 49}{space 3}0.027{col 57}{space 4} 3.327278{col 70}{space 3} 50.88375
 {txt}{space 15} {c |}
@@ -1906,7 +1598,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 28.19694{col 29}{space 2} 14.19589{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 109.5465{col 29}{space 2} 18.67302{col 40}{space 1}    5.87{col 49}{space 3}0.000{col 57}{space 4} 71.74491{col 70}{space 3}  147.348
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 n_familyla~l {c |}{res}        275    104.1018    107.7768          0        630
 
@@ -1927,10 +1619,10 @@ n_familyla~l {c |}{res}        275    104.1018    107.7768          0        630
                                                 {txt}R-squared         = {res}    0.0641
                                                 {txt}Root MSE          =    {res} 22.838
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}n_unpaidlabor~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}n_unpaidlabor~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-2.136257{col 29}{space 2} 2.395528{col 40}{space 1}   -0.89{col 49}{space 3}0.378{col 57}{space 4} -6.98575{col 70}{space 3} 2.713237
 {txt}{space 15} {c |}
@@ -1958,7 +1650,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-2.563705{col 29}{space 2} 2.628263{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 12.02631{col 29}{space 2} 3.414356{col 40}{space 1}    3.52{col 49}{space 3}0.001{col 57}{space 4} 5.114308{col 70}{space 3} 18.93831
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 n_unpaidla~l {c |}{res}        275    12.44727    23.69314          0        127
 
@@ -1979,10 +1671,10 @@ n_unpaidla~l {c |}{res}        275    12.44727    23.69314          0        127
                                                 {txt}R-squared         = {res}    0.0721
                                                 {txt}Root MSE          =    {res} 41.935
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}n_paidlabor_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}n_paidlabor_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 5.155087{col 29}{space 2} 4.846127{col 40}{space 1}    1.06{col 49}{space 3}0.294{col 57}{space 4}-4.655383{col 70}{space 3} 14.96556
 {txt}{space 15} {c |}
@@ -2010,7 +1702,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 5.780495{col 29}{space 2} 5.877724{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 18.72378{col 29}{space 2} 5.941322{col 40}{space 1}    3.15{col 49}{space 3}0.003{col 57}{space 4} 6.696198{col 70}{space 3} 30.75135
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 n_paidlabo~l {c |}{res}        275    25.93455    40.86567          0        267
 
@@ -2031,10 +1723,10 @@ n_paidlabo~l {c |}{res}        275    25.93455    40.86567          0        267
                                                 {txt}R-squared         = {res}    0.0513
                                                 {txt}Root MSE          =    {res} 316.38
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}labor_spendin~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}labor_spendin~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}  29.9903{col 29}{space 2} 37.80602{col 40}{space 1}    0.79{col 49}{space 3}0.433{col 57}{space 4}-46.54399{col 70}{space 3} 106.5246
 {txt}{space 15} {c |}
@@ -2062,7 +1754,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 80.28846{col 29}{space 2} 46.25517{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 173.7094{col 29}{space 2} 31.52818{col 40}{space 1}    5.51{col 49}{space 3}0.000{col 57}{space 4} 109.8839{col 70}{space 3} 237.5349
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 labor_spen~l {c |}{res}        275    204.3305    304.1824          0     1861.2
 
@@ -2083,10 +1775,10 @@ labor_spen~l {c |}{res}        275    204.3305    304.1824          0     1861.2
                                                 {txt}R-squared         = {res}    0.0745
                                                 {txt}Root MSE          =    {res} 214.12
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_labor_spen~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_labor_spen~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 7.900785{col 29}{space 2} 30.18688{col 40}{space 1}    0.26{col 49}{space 3}0.795{col 57}{space 4}-53.20936{col 70}{space 3} 69.01093
 {txt}{space 15} {c |}
@@ -2114,7 +1806,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 59.43148{col 29}{space 2} 30.28881{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 79.53819{col 29}{space 2} 28.36018{col 40}{space 1}    2.80{col 49}{space 3}0.008{col 57}{space 4} 22.12601{col 70}{space 3} 136.9504
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_labor_s~l {c |}{res}        275    133.1614    210.7799          0     1095.6
 
@@ -2129,17 +1821,17 @@ rp_labor_s~l {c |}{res}        275    133.1614    210.7799          0     1095.6
 {txt}added scalar:
              e(p_conv) =  {res}.79494384
 {txt}(3 missing values generated)
-(5 real changes made)
-(5 real changes made)
+(0 real changes made)
+(0 real changes made)
 (3 missing values generated)
-(5 real changes made)
-(5 real changes made)
+(0 real changes made)
+(0 real changes made)
 (3 missing values generated)
-(5 real changes made)
-(5 real changes made)
+(0 real changes made)
+(0 real changes made)
 (3 missing values generated)
-(5 real changes made)
-(5 real changes made)
+(0 real changes made)
+(0 real changes made)
 (3 missing values generated)
 (5 real changes made)
 (5 real changes made)
@@ -2150,10 +1842,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.1059
                                                 {txt}Root MSE          =    {res} .37598
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}ImprovedRice_~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}ImprovedRice_~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0722978{col 29}{space 2} .0570122{col 40}{space 1}    1.27{col 49}{space 3}0.212{col 57}{space 4}-.0431173{col 70}{space 3} .1877129
 {txt}{space 15} {c |}
@@ -2181,7 +1873,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} -.084802{col 29}{space 2} .0492267{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  .227077{col 29}{space 2} .0854601{col 40}{space 1}    2.66{col 49}{space 3}0.011{col 57}{space 4}  .054072{col 70}{space 3} .4000819
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 ImprovedRi~l {c |}{res}        275    .1309091    .3379159          0          1
 
@@ -2202,10 +1894,10 @@ ImprovedRi~l {c |}{res}        275    .1309091    .3379159          0          1
                                                 {txt}R-squared         = {res}    0.2522
                                                 {txt}Root MSE          =    {res}  .4133
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1} fertilizer_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1} fertilizer_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}  .051703{col 29}{space 2} .0538293{col 40}{space 1}    0.96{col 49}{space 3}0.343{col 57}{space 4}-.0572686{col 70}{space 3} .1606747
 {txt}{space 15} {c |}
@@ -2233,7 +1925,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0974591{col 29}{space 2} .0770967{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  .329395{col 29}{space 2} .1724573{col 40}{space 1}    1.91{col 49}{space 3}0.064{col 57}{space 4}-.0197265{col 70}{space 3} .6785166
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 fertilizer~l {c |}{res}        275    .6145455    .4875899          0          1
 
@@ -2254,10 +1946,10 @@ fertilizer~l {c |}{res}        275    .6145455    .4875899          0          1
                                                 {txt}R-squared         = {res}    0.1537
                                                 {txt}Root MSE          =    {res}  .4537
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  pesticide_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  pesticide_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .1377389{col 29}{space 2} .0605896{col 40}{space 1}    2.27{col 49}{space 3}0.029{col 57}{space 4} .0150816{col 70}{space 3} .2603962
 {txt}{space 15} {c |}
@@ -2285,7 +1977,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1543046{col 29}{space 2} .0707994{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .3173377{col 29}{space 2} .0957588{col 40}{space 1}    3.31{col 49}{space 3}0.002{col 57}{space 4}  .123484{col 70}{space 3} .5111913
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 pesticide_~l {c |}{res}        275    .5563636    .4977188          0          1
 
@@ -2306,10 +1998,10 @@ pesticide_~l {c |}{res}        275    .5563636    .4977188          0          1
                                                 {txt}R-squared         = {res}    0.2460
                                                 {txt}Root MSE          =    {res} .42535
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}       urea_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}       urea_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0631812{col 29}{space 2} .0514912{col 40}{space 1}    1.23{col 49}{space 3}0.227{col 57}{space 4}-.0410573{col 70}{space 3} .1674197
 {txt}{space 15} {c |}
@@ -2337,7 +2029,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1108147{col 29}{space 2} .0709022{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  .270777{col 29}{space 2} .1463389{col 40}{space 1}    1.85{col 49}{space 3}0.072{col 57}{space 4}-.0254706{col 70}{space 3} .5670247
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 4}urea_bsl {c |}{res}        275    .5745455    .4953131          0          1
 
@@ -2358,10 +2050,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .1108147{col 29}{space 2} .0709022{c
                                                 {txt}R-squared         = {res}    0.1361
                                                 {txt}Root MSE          =    {res} 65.787
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_seed_spend~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_seed_spend~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-3.396125{col 29}{space 2} 7.779812{col 40}{space 1}   -0.44{col 49}{space 3}0.665{col 57}{space 4}-19.14553{col 70}{space 3} 12.35328
 {txt}{space 15} {c |}
@@ -2389,7 +2081,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 10.52679{col 29}{space 2} 8.539926{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  40.0805{col 29}{space 2} 18.64076{col 40}{space 1}    2.15{col 49}{space 3}0.038{col 57}{space 4} 2.344249{col 70}{space 3} 77.81676
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_seed_sp~l {c |}{res}        275    56.12096    70.90041          0      382.8
 
@@ -2410,10 +2102,10 @@ rp_seed_sp~l {c |}{res}        275    56.12096    70.90041          0      382.8
                                                 {txt}R-squared         = {res}    0.1793
                                                 {txt}Root MSE          =    {res} 61.126
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_urea_spend~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_urea_spend~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 1.120877{col 29}{space 2} 5.841997{col 40}{space 1}    0.19{col 49}{space 3}0.849{col 57}{space 4}-10.70563{col 70}{space 3} 12.94738
 {txt}{space 15} {c |}
@@ -2441,7 +2133,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 1.486258{col 29}{space 2} 8.064009{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 8.843916{col 29}{space 2} 9.275787{col 40}{space 1}    0.95{col 49}{space 3}0.346{col 57}{space 4}-9.933933{col 70}{space 3} 27.62177
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_urea_sp~l {c |}{res}        275     45.6544    63.12442          0      302.5
 
@@ -2462,10 +2154,10 @@ rp_urea_sp~l {c |}{res}        275     45.6544    63.12442          0      302.5
                                                 {txt}R-squared         = {res}    0.0949
                                                 {txt}Root MSE          =    {res} 53.068
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_npk_spendi~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_npk_spendi~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 4.837214{col 29}{space 2} 5.823895{col 40}{space 1}    0.83{col 49}{space 3}0.411{col 57}{space 4}-6.952646{col 70}{space 3} 16.62707
 {txt}{space 15} {c |}
@@ -2493,7 +2185,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 2.123061{col 29}{space 2} 5.922739{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 5.250344{col 29}{space 2} 8.484138{col 40}{space 1}    0.62{col 49}{space 3}0.540{col 57}{space 4} -11.9249{col 70}{space 3} 22.42558
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_npk_spe~l {c |}{res}        275    24.32104    51.28584          0      277.2
 
@@ -2514,10 +2206,10 @@ rp_npk_spe~l {c |}{res}        275    24.32104    51.28584          0      277.2
                                                 {txt}R-squared         = {res}    0.1556
                                                 {txt}Root MSE          =    {res} 114.21
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_allchem_sp~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_allchem_sp~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 8.322167{col 29}{space 2} 13.42611{col 40}{space 1}    0.62{col 49}{space 3}0.539{col 57}{space 4}-18.85756{col 70}{space 3}  35.5019
 {txt}{space 15} {c |}
@@ -2545,7 +2237,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 6.676348{col 29}{space 2} 15.59184{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 12.17722{col 29}{space 2} 18.67059{col 40}{space 1}    0.65{col 49}{space 3}0.518{col 57}{space 4}-25.61943{col 70}{space 3} 49.97386
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_allchem~l {c |}{res}        275    76.94184     112.985          0        660
 
@@ -2566,10 +2258,10 @@ rp_allchem~l {c |}{res}        275    76.94184     112.985          0        660
                                                 {txt}R-squared         = {res}    0.1153
                                                 {txt}Root MSE          =    {res}  375.2
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_spending_u~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_spending_u~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} 26.25732{col 29}{space 2} 53.95819{col 40}{space 1}    0.49{col 49}{space 3}0.629{col 57}{space 4}-82.97533{col 70}{space 3}   135.49
 {txt}{space 15} {c |}
@@ -2597,7 +2289,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 100.7413{col 29}{space 2} 47.91684{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  146.545{col 29}{space 2} 60.46283{col 40}{space 1}    2.42{col 49}{space 3}0.020{col 57}{space 4}  24.1444{col 70}{space 3} 268.9456
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_spendin~l {c |}{res}        275    286.6546    373.4445          0    2056.67
 
@@ -2621,10 +2313,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.0755
                                                 {txt}Root MSE          =    {res} .97392
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}assets_livst_~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}assets_livst_~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0512909{col 29}{space 2} .1049762{col 40}{space 1}    0.49{col 49}{space 3}0.628{col 57}{space 4}-.1612223{col 70}{space 3} .2638041
 {txt}{space 15} {c |}
@@ -2652,7 +2344,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0756069{col 29}{space 2} .1050544{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}-.1754671{col 29}{space 2} .1855162{col 40}{space 1}   -0.95{col 49}{space 3}0.350{col 57}{space 4}-.5510251{col 70}{space 3} .2000908
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 assets_liv~l {c |}{res}        275   -.0857566    .9965054  -1.248283   1.961496
 
@@ -2676,10 +2368,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.3093
                                                 {txt}Root MSE          =    {res} .84419
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}   hous_ind_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}   hous_ind_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}  -.02477{col 29}{space 2} .1216977{col 40}{space 1}   -0.20{col 49}{space 3}0.840{col 57}{space 4}-.2711341{col 70}{space 3}  .221594
 {txt}{space 15} {c |}
@@ -2707,7 +2399,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .3080784{col 29}{space 2} .1924868{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}-.2361515{col 29}{space 2} .2991602{col 40}{space 1}   -0.79{col 49}{space 3}0.435{col 57}{space 4}-.8417696{col 70}{space 3} .3694667
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 hous_ind_bsl {c |}{res}        273    .1415669    1.005986  -1.776829   2.315854
 
@@ -2731,10 +2423,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.3093
                                                 {txt}Root MSE          =    {res} .84419
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}   hous_ind_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}   hous_ind_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}  -.02477{col 29}{space 2} .1216977{col 40}{space 1}   -0.20{col 49}{space 3}0.840{col 57}{space 4}-.2711341{col 70}{space 3}  .221594
 {txt}{space 15} {c |}
@@ -2762,7 +2454,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .3080784{col 29}{space 2} .1924868{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}-.2361515{col 29}{space 2} .2991602{col 40}{space 1}   -0.79{col 49}{space 3}0.435{col 57}{space 4}-.8417696{col 70}{space 3} .3694667
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 hous_ind_bsl {c |}{res}        273    .1415669    1.005986  -1.776829   2.315854
 
@@ -2783,10 +2475,10 @@ hous_ind_bsl {c |}{res}        273    .1415669    1.005986  -1.776829   2.315854
                                                 {txt}R-squared         = {res}    0.0548
                                                 {txt}Root MSE          =    {res} 1.0057
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}assets_farm_i~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}assets_farm_i~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.1602415{col 29}{space 2} .1563935{col 40}{space 1}   -1.02{col 49}{space 3}0.312{col 57}{space 4}-.4768436{col 70}{space 3} .1563606
 {txt}{space 15} {c |}
@@ -2814,7 +2506,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0330827{col 29}{space 2} .0802763{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}-.2712022{col 29}{space 2} .1142084{col 40}{space 1}   -2.37{col 49}{space 3}0.023{col 57}{space 4} -.502405{col 70}{space 3}-.0399995
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 assets_far~l {c |}{res}        275   -.0002703    1.207772  -.1661166   17.20271
 
@@ -2835,10 +2527,10 @@ assets_far~l {c |}{res}        275   -.0002703    1.207772  -.1661166   17.20271
                                                 {txt}R-squared         = {res}    0.1264
                                                 {txt}Root MSE          =    {res} .45295
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1} savings_fl_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1} savings_fl_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .1265808{col 29}{space 2} .0501939{col 40}{space 1}    2.52{col 49}{space 3}0.016{col 57}{space 4} .0249687{col 70}{space 3}  .228193
 {txt}{space 15} {c |}
@@ -2866,7 +2558,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0439357{col 29}{space 2} .0919792{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .3104769{col 29}{space 2} .0722195{col 40}{space 1}    4.30{col 49}{space 3}0.000{col 57}{space 4} .1642761{col 70}{space 3} .4566777
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 savings_fl~l {c |}{res}        273    .3076923    .4623861          0          1
 
@@ -2887,10 +2579,10 @@ savings_fl~l {c |}{res}        273    .3076923    .4623861          0          1
                                                 {txt}R-squared         = {res}    0.1266
                                                 {txt}Root MSE          =    {res} .40913
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}       bank_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}        bnk_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .0109185{col 29}{space 2} .0330981{col 40}{space 1}    0.33{col 49}{space 3}0.743{col 57}{space 4}-.0560852{col 70}{space 3} .0779221
 {txt}{space 15} {c |}
@@ -2918,9 +2610,9 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0725505{col 29}{space 2} .0503497{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1922014{col 29}{space 2} .0576106{col 40}{space 1}    3.34{col 49}{space 3}0.002{col 57}{space 4} .0755748{col 70}{space 3}  .308828
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 4}bank_bsl {c |}{res}        273    .2637363    .4414673          0          1
+{space 5}bnk_bsl {c |}{res}        273    .2637363    .4414673          0          1
 
 {txt}added scalar:
               e(m_ctr) =  {res}.26373626
@@ -2939,10 +2631,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0725505{col 29}{space 2} .0503497{c
                                                 {txt}R-squared         = {res}    0.0853
                                                 {txt}Root MSE          =    {res} .45138
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}askloan_bank_~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}askloan_bank_~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.0374636{col 29}{space 2} .0437919{col 40}{space 1}   -0.86{col 49}{space 3}0.398{col 57}{space 4}-.1261156{col 70}{space 3} .0511884
 {txt}{space 15} {c |}
@@ -2970,7 +2662,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0248031{col 29}{space 2} .0575487{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .2584038{col 29}{space 2} .0683254{col 40}{space 1}    3.78{col 49}{space 3}0.001{col 57}{space 4} .1200863{col 70}{space 3} .3967213
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 askloan_ba~l {c |}{res}        273    .3150183    .4653763          0          1
 
@@ -2991,10 +2683,10 @@ askloan_ba~l {c |}{res}        273    .3150183    .4653763          0          1
                                                 {txt}R-squared         = {res}    0.0455
                                                 {txt}Root MSE          =    {res} .41799
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}    refloan_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}    refloan_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.0291683{col 29}{space 2} .0436812{col 40}{space 1}   -0.67{col 49}{space 3}0.508{col 57}{space 4}-.1175962{col 70}{space 3} .0592595
 {txt}{space 15} {c |}
@@ -3022,7 +2714,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0687419{col 29}{space 2} .0462168{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1539636{col 29}{space 2} .0736611{col 40}{space 1}    2.09{col 49}{space 3}0.043{col 57}{space 4} .0048446{col 70}{space 3} .3030826
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 1}refloan_bsl {c |}{res}        275    .2327273    .4233403          0          1
 
@@ -3037,57 +2729,57 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} .0687419{col 29}{space 2} .0462168{c
 {txt}added scalar:
              e(p_conv) =  {res}.50832508
 
-{txt}Linear regression                               Number of obs     = {res}       389
-                                                {txt}{help j_robustsingular:F(19, 37) }        =  {res}        .
+{txt}Linear regression                               Number of obs     = {res}       515
+                                                {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
                                                 {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.2380
-                                                {txt}Root MSE          =    {res} 2.3227
+                                                {txt}R-squared         = {res}    0.1503
+                                                {txt}Root MSE          =    {res} 2.7737
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:38} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}       WDDS_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}       WDDS_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .0150207{col 29}{space 2} .4113195{col 40}{space 1}    0.04{col 49}{space 3}0.971{col 57}{space 4}-.8183917{col 70}{space 3} .8484332
+{space 6}treatment {c |}{col 17}{res}{space 2} .3816222{col 29}{space 2} .4282133{col 40}{space 1}    0.89{col 49}{space 3}0.378{col 57}{space 4}-.4852503{col 70}{space 3} 1.248495
 {txt}{space 15} {c |}
 {space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2} 1.289842{col 29}{space 2} 1.048182{col 40}{space 1}    1.23{col 49}{space 3}0.226{col 57}{space 4} -.833976{col 70}{space 3}  3.41366
-{txt}{space 13}3  {c |}{col 17}{res}{space 2} 1.049345{col 29}{space 2} .7242438{col 40}{space 1}    1.45{col 49}{space 3}0.156{col 57}{space 4}-.4181127{col 70}{space 3} 2.516802
-{txt}{space 13}4  {c |}{col 17}{res}{space 2} 2.650862{col 29}{space 2} .5787856{col 40}{space 1}    4.58{col 49}{space 3}0.000{col 57}{space 4} 1.478131{col 70}{space 3} 3.823593
-{txt}{space 13}5  {c |}{col 17}{res}{space 2} 1.160705{col 29}{space 2} .6270137{col 40}{space 1}    1.85{col 49}{space 3}0.072{col 57}{space 4}-.1097453{col 70}{space 3} 2.431156
-{txt}{space 13}6  {c |}{col 17}{res}{space 2} 2.077116{col 29}{space 2} 1.442605{col 40}{space 1}    1.44{col 49}{space 3}0.158{col 57}{space 4}-.8458791{col 70}{space 3}  5.00011
-{txt}{space 13}7  {c |}{col 17}{res}{space 2}  .714522{col 29}{space 2} .7614701{col 40}{space 1}    0.94{col 49}{space 3}0.354{col 57}{space 4} -.828363{col 70}{space 3} 2.257407
-{txt}{space 12}11  {c |}{col 17}{res}{space 2} 2.392135{col 29}{space 2} 1.134073{col 40}{space 1}    2.11{col 49}{space 3}0.042{col 57}{space 4} .0942853{col 70}{space 3} 4.689985
-{txt}{space 12}12  {c |}{col 17}{res}{space 2} 1.672655{col 29}{space 2} .6726748{col 40}{space 1}    2.49{col 49}{space 3}0.018{col 57}{space 4} .3096868{col 70}{space 3} 3.035624
-{txt}{space 12}13  {c |}{col 17}{res}{space 2} .4027627{col 29}{space 2} .6157306{col 40}{space 1}    0.65{col 49}{space 3}0.517{col 57}{space 4}-.8448259{col 70}{space 3} 1.650351
-{txt}{space 12}14  {c |}{col 17}{res}{space 2} .0936572{col 29}{space 2} .7321856{col 40}{space 1}    0.13{col 49}{space 3}0.899{col 57}{space 4}-1.389892{col 70}{space 3} 1.577206
-{txt}{space 12}15  {c |}{col 17}{res}{space 2} .5567641{col 29}{space 2} .8684026{col 40}{space 1}    0.64{col 49}{space 3}0.525{col 57}{space 4}-1.202787{col 70}{space 3} 2.316315
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}  .493929{col 29}{space 2} 2.154283{col 40}{space 1}    0.23{col 49}{space 3}0.820{col 57}{space 4}-3.871063{col 70}{space 3} 4.858921
-{txt}{space 12}17  {c |}{col 17}{res}{space 2} 3.512867{col 29}{space 2}  .840208{col 40}{space 1}    4.18{col 49}{space 3}0.000{col 57}{space 4} 1.810444{col 70}{space 3}  5.21529
+{space 13}2  {c |}{col 17}{res}{space 2} .6371991{col 29}{space 2} 1.065588{col 40}{space 1}    0.60{col 49}{space 3}0.553{col 57}{space 4}-1.519971{col 70}{space 3} 2.794369
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} .8670805{col 29}{space 2} .6730549{col 40}{space 1}    1.29{col 49}{space 3}0.205{col 57}{space 4}-.4954479{col 70}{space 3} 2.229609
+{txt}{space 13}4  {c |}{col 17}{res}{space 2} 1.332003{col 29}{space 2} .6990347{col 40}{space 1}    1.91{col 49}{space 3}0.064{col 57}{space 4}-.0831188{col 70}{space 3} 2.747125
+{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.7963001{col 29}{space 2} .3875917{col 40}{space 1}   -2.05{col 49}{space 3}0.047{col 57}{space 4}-1.580938{col 70}{space 3}-.0116617
+{txt}{space 13}6  {c |}{col 17}{res}{space 2} 1.037364{col 29}{space 2} .8042927{col 40}{space 1}    1.29{col 49}{space 3}0.205{col 57}{space 4}-.5908411{col 70}{space 3}  2.66557
+{txt}{space 13}7  {c |}{col 17}{res}{space 2}-.3975646{col 29}{space 2} 1.481371{col 40}{space 1}   -0.27{col 49}{space 3}0.790{col 57}{space 4}-3.396443{col 70}{space 3} 2.601314
+{txt}{space 12}11  {c |}{col 17}{res}{space 2} 2.295231{col 29}{space 2} 1.204765{col 40}{space 1}    1.91{col 49}{space 3}0.064{col 57}{space 4}-.1436882{col 70}{space 3} 4.734151
+{txt}{space 12}12  {c |}{col 17}{res}{space 2} .0910249{col 29}{space 2} .7063896{col 40}{space 1}    0.13{col 49}{space 3}0.898{col 57}{space 4}-1.338986{col 70}{space 3} 1.521036
+{txt}{space 12}13  {c |}{col 17}{res}{space 2} .4140192{col 29}{space 2} .8776741{col 40}{space 1}    0.47{col 49}{space 3}0.640{col 57}{space 4}-1.362739{col 70}{space 3} 2.190778
+{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.1576171{col 29}{space 2} .8296485{col 40}{space 1}   -0.19{col 49}{space 3}0.850{col 57}{space 4}-1.837153{col 70}{space 3} 1.521918
+{txt}{space 12}15  {c |}{col 17}{res}{space 2}-.0175105{col 29}{space 2} .7368952{col 40}{space 1}   -0.02{col 49}{space 3}0.981{col 57}{space 4}-1.509277{col 70}{space 3} 1.474256
+{txt}{space 12}16  {c |}{col 17}{res}{space 2} .2280426{col 29}{space 2}  2.05246{col 40}{space 1}    0.11{col 49}{space 3}0.912{col 57}{space 4}-3.926946{col 70}{space 3} 4.383031
+{txt}{space 12}17  {c |}{col 17}{res}{space 2}   3.5274{col 29}{space 2} .8838127{col 40}{space 1}    3.99{col 49}{space 3}0.000{col 57}{space 4} 1.738215{col 70}{space 3} 5.316585
 {txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-1.282016{col 29}{space 2} .4529683{col 40}{space 1}   -2.83{col 49}{space 3}0.007{col 57}{space 4}-2.199817{col 70}{space 3}-.3642149
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} 1.320457{col 29}{space 2} .6279279{col 40}{space 1}    2.10{col 49}{space 3}0.042{col 57}{space 4} .0481542{col 70}{space 3}  2.59276
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2}-1.085263{col 29}{space 2} .5943027{col 40}{space 1}   -1.83{col 49}{space 3}0.076{col 57}{space 4}-2.289435{col 70}{space 3} .1189088
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} -1.15117{col 29}{space 2}  .464713{col 40}{space 1}   -2.48{col 49}{space 3}0.018{col 57}{space 4}-2.092768{col 70}{space 3}-.2095721
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .1655328{col 29}{space 2} .4331517{col 40}{space 1}    0.38{col 49}{space 3}0.705{col 57}{space 4}-.7121159{col 70}{space 3} 1.043182
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2}-.4463655{col 29}{space 2}  .699761{col 40}{space 1}   -0.64{col 49}{space 3}0.527{col 57}{space 4}-1.864216{col 70}{space 3} .9714849
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} 3.557376{col 29}{space 2} .4583164{col 40}{space 1}    7.76{col 49}{space 3}0.000{col 57}{space 4} 2.628738{col 70}{space 3} 4.486013
+h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.9618932{col 29}{space 2} .5070373{col 40}{space 1}   -1.90{col 49}{space 3}0.065{col 57}{space 4}-1.988337{col 70}{space 3} .0645501
+{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2}  1.15434{col 29}{space 2} .7124156{col 40}{space 1}    1.62{col 49}{space 3}0.113{col 57}{space 4}-.2878701{col 70}{space 3}  2.59655
+{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2}-.6585631{col 29}{space 2} .5991098{col 40}{space 1}   -1.10{col 49}{space 3}0.279{col 57}{space 4}-1.871397{col 70}{space 3} .5542712
+{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2}-.6496803{col 29}{space 2} .5456991{col 40}{space 1}   -1.19{col 49}{space 3}0.241{col 57}{space 4} -1.75439{col 70}{space 3} .4550298
+{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} .2402713{col 29}{space 2} .3520596{col 40}{space 1}    0.68{col 49}{space 3}0.499{col 57}{space 4}-.4724361{col 70}{space 3} .9529787
+{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2}-1.006338{col 29}{space 2} .6329239{col 40}{space 1}   -1.59{col 49}{space 3}0.120{col 57}{space 4}-2.287625{col 70}{space 3} .2749496
+{txt}{space 10}_cons {c |}{col 17}{res}{space 2} 2.749541{col 29}{space 2}  .482695{col 40}{space 1}    5.70{col 49}{space 3}0.000{col 57}{space 4} 1.772376{col 70}{space 3} 3.726706
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 4}WDDS_bsl {c |}{res}        196    4.112245    2.324375          0          9
+{space 4}WDDS_bsl {c |}{res}        275    2.930909    2.705555          0          9
 
 {txt}added scalar:
-              e(m_ctr) =  {res}4.1122449
+              e(m_ctr) =  {res}2.9309091
 
 {p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
 
-{txt}       F(  1,    37) ={res}    0.00
-{txt}{col 13}Prob > F ={res}    0.9711
+{txt}       F(  1,    38) ={res}    0.79
+{txt}{col 13}Prob > F ={res}    0.3784
 
 {txt}added scalar:
-             e(p_conv) =  {res}.97106532
+             e(p_conv) =  {res}.37843208
 
 {txt}Linear regression                               Number of obs     = {res}       515
                                                 {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
@@ -3095,10 +2787,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-1.282016{col 29}{space 2} .4529683{c
                                                 {txt}R-squared         = {res}    0.1332
                                                 {txt}Root MSE          =    {res} 2.1683
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}months_insecu~l{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}months_insecu~l{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2} .5414111{col 29}{space 2} .2250586{col 40}{space 1}    2.41{col 49}{space 3}0.021{col 57}{space 4} .0858038{col 70}{space 3} .9970184
 {txt}{space 15} {c |}
@@ -3126,7 +2818,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.7195491{col 29}{space 2} .3765355{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  2.69942{col 29}{space 2} .5270879{col 40}{space 1}    5.12{col 49}{space 3}0.000{col 57}{space 4} 1.632387{col 70}{space 3} 3.766454
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 months_ins~l {c |}{res}        275    2.650909    2.178601          0         12
 
@@ -3141,57 +2833,57 @@ months_ins~l {c |}{res}        275    2.650909    2.178601          0         12
 {txt}added scalar:
              e(p_conv) =  {res}.02111743
 
-{txt}Linear regression                               Number of obs     = {res}       508
+{txt}Linear regression                               Number of obs     = {res}       515
                                                 {txt}{help j_robustsingular:F(19, 38) }        =  {res}        .
                                                 {txt}Prob > F          = {res}         .
-                                                {txt}R-squared         = {res}    0.0681
-                                                {txt}Root MSE          =    {res} 1.6389
+                                                {txt}R-squared         = {res}    0.0678
+                                                {txt}Root MSE          =    {res} 1.6644
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}HungerScale_bsl{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}HungerScale_bsl{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 6}treatment {c |}{col 17}{res}{space 2} .1147034{col 29}{space 2} .1973742{col 40}{space 1}    0.58{col 49}{space 3}0.565{col 57}{space 4}-.2848599{col 70}{space 3} .5142666
+{space 6}treatment {c |}{col 17}{res}{space 2} .1467036{col 29}{space 2} .2054063{col 40}{space 1}    0.71{col 49}{space 3}0.479{col 57}{space 4}-.2691197{col 70}{space 3} .5625269
 {txt}{space 15} {c |}
 {space 5}group2_bsl {c |}
-{space 13}2  {c |}{col 17}{res}{space 2}-.2357276{col 29}{space 2} .4295067{col 40}{space 1}   -0.55{col 49}{space 3}0.586{col 57}{space 4}-1.105218{col 70}{space 3} .6337632
-{txt}{space 13}3  {c |}{col 17}{res}{space 2} .1408068{col 29}{space 2} .3416063{col 40}{space 1}    0.41{col 49}{space 3}0.683{col 57}{space 4} -.550739{col 70}{space 3} .8323526
-{txt}{space 13}4  {c |}{col 17}{res}{space 2} .2652876{col 29}{space 2} .4235178{col 40}{space 1}    0.63{col 49}{space 3}0.535{col 57}{space 4}-.5920793{col 70}{space 3} 1.122654
-{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.6512708{col 29}{space 2} .5019589{col 40}{space 1}   -1.30{col 49}{space 3}0.202{col 57}{space 4}-1.667434{col 70}{space 3} .3648919
-{txt}{space 13}6  {c |}{col 17}{res}{space 2}-.2217662{col 29}{space 2} .3484296{col 40}{space 1}   -0.64{col 49}{space 3}0.528{col 57}{space 4} -.927125{col 70}{space 3} .4835927
-{txt}{space 13}7  {c |}{col 17}{res}{space 2} .0846697{col 29}{space 2} .5122103{col 40}{space 1}    0.17{col 49}{space 3}0.870{col 57}{space 4}-.9522458{col 70}{space 3} 1.121585
-{txt}{space 12}11  {c |}{col 17}{res}{space 2} .2646797{col 29}{space 2} .5224878{col 40}{space 1}    0.51{col 49}{space 3}0.615{col 57}{space 4}-.7930416{col 70}{space 3} 1.322401
-{txt}{space 12}12  {c |}{col 17}{res}{space 2} .1967984{col 29}{space 2} .3945914{col 40}{space 1}    0.50{col 49}{space 3}0.621{col 57}{space 4}-.6020101{col 70}{space 3} .9956069
-{txt}{space 12}13  {c |}{col 17}{res}{space 2}-.3747781{col 29}{space 2}  .558736{col 40}{space 1}   -0.67{col 49}{space 3}0.506{col 57}{space 4} -1.50588{col 70}{space 3} .7563239
-{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.5977731{col 29}{space 2} .5576825{col 40}{space 1}   -1.07{col 49}{space 3}0.291{col 57}{space 4}-1.726742{col 70}{space 3}  .531196
-{txt}{space 12}15  {c |}{col 17}{res}{space 2}-1.136464{col 29}{space 2} .4380752{col 40}{space 1}   -2.59{col 49}{space 3}0.013{col 57}{space 4}-2.023301{col 70}{space 3}-.2496275
-{txt}{space 12}16  {c |}{col 17}{res}{space 2}-1.059062{col 29}{space 2} .5801634{col 40}{space 1}   -1.83{col 49}{space 3}0.076{col 57}{space 4}-2.233541{col 70}{space 3} .1154178
-{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.7739496{col 29}{space 2} .5172632{col 40}{space 1}   -1.50{col 49}{space 3}0.143{col 57}{space 4}-1.821094{col 70}{space 3} .2731951
+{space 13}2  {c |}{col 17}{res}{space 2}-.1820537{col 29}{space 2} .4322489{col 40}{space 1}   -0.42{col 49}{space 3}0.676{col 57}{space 4}-1.057096{col 70}{space 3} .6929884
+{txt}{space 13}3  {c |}{col 17}{res}{space 2} .1983561{col 29}{space 2} .3315022{col 40}{space 1}    0.60{col 49}{space 3}0.553{col 57}{space 4} -.472735{col 70}{space 3} .8694473
+{txt}{space 13}4  {c |}{col 17}{res}{space 2} .2730817{col 29}{space 2} .4424257{col 40}{space 1}    0.62{col 49}{space 3}0.541{col 57}{space 4}-.6225624{col 70}{space 3} 1.168726
+{txt}{space 13}5  {c |}{col 17}{res}{space 2}-.6097382{col 29}{space 2}  .496452{col 40}{space 1}   -1.23{col 49}{space 3}0.227{col 57}{space 4}-1.614753{col 70}{space 3} .3952764
+{txt}{space 13}6  {c |}{col 17}{res}{space 2}-.1618115{col 29}{space 2} .3433971{col 40}{space 1}   -0.47{col 49}{space 3}0.640{col 57}{space 4}-.8569826{col 70}{space 3} .5333595
+{txt}{space 13}7  {c |}{col 17}{res}{space 2} .1399379{col 29}{space 2} .5049609{col 40}{space 1}    0.28{col 49}{space 3}0.783{col 57}{space 4}-.8823019{col 70}{space 3} 1.162178
+{txt}{space 12}11  {c |}{col 17}{res}{space 2} .3189936{col 29}{space 2} .5263932{col 40}{space 1}    0.61{col 49}{space 3}0.548{col 57}{space 4}-.7466337{col 70}{space 3} 1.384621
+{txt}{space 12}12  {c |}{col 17}{res}{space 2} .1416076{col 29}{space 2} .3863343{col 40}{space 1}    0.37{col 49}{space 3}0.716{col 57}{space 4}-.6404854{col 70}{space 3} .9237006
+{txt}{space 12}13  {c |}{col 17}{res}{space 2} -.340731{col 29}{space 2} .5594043{col 40}{space 1}   -0.61{col 49}{space 3}0.546{col 57}{space 4}-1.473186{col 70}{space 3} .7917238
+{txt}{space 12}14  {c |}{col 17}{res}{space 2}-.5305119{col 29}{space 2} .5644059{col 40}{space 1}   -0.94{col 49}{space 3}0.353{col 57}{space 4}-1.673092{col 70}{space 3} .6120681
+{txt}{space 12}15  {c |}{col 17}{res}{space 2}-1.197785{col 29}{space 2} .4574736{col 40}{space 1}   -2.62{col 49}{space 3}0.013{col 57}{space 4}-2.123892{col 70}{space 3}-.2716779
+{txt}{space 12}16  {c |}{col 17}{res}{space 2}-1.248807{col 29}{space 2}  .460741{col 40}{space 1}   -2.71{col 49}{space 3}0.010{col 57}{space 4}-2.181528{col 70}{space 3}-.3160853
+{txt}{space 12}17  {c |}{col 17}{res}{space 2}-.7203273{col 29}{space 2}  .535016{col 40}{space 1}   -1.35{col 49}{space 3}0.186{col 57}{space 4}-1.803411{col 70}{space 3}  .362756
 {txt}{space 15} {c |}
-h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.3211539{col 29}{space 2}  .157401{col 40}{space 1}   -2.04{col 49}{space 3}0.048{col 57}{space 4}-.6397955{col 70}{space 3}-.0025123
-{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .1021934{col 29}{space 2} .2736763{col 40}{space 1}    0.37{col 49}{space 3}0.711{col 57}{space 4}-.4518354{col 70}{space 3} .6562222
-{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} .5410755{col 29}{space 2} .2711899{col 40}{space 1}    2.00{col 49}{space 3}0.053{col 57}{space 4}-.0079198{col 70}{space 3} 1.090071
-{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2}-.1935728{col 29}{space 2} .2156791{col 40}{space 1}   -0.90{col 49}{space 3}0.375{col 57}{space 4}-.6301923{col 70}{space 3} .2430468
-{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2}-.0733602{col 29}{space 2} .1792369{col 40}{space 1}   -0.41{col 49}{space 3}0.685{col 57}{space 4}-.4362063{col 70}{space 3}  .289486
-{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2} .0848391{col 29}{space 2} .4577613{col 40}{space 1}    0.19{col 49}{space 3}0.854{col 57}{space 4}-.8418502{col 70}{space 3} 1.011528
-{txt}{space 10}_cons {c |}{col 17}{res}{space 2} 3.118171{col 29}{space 2}  .393376{col 40}{space 1}    7.93{col 49}{space 3}0.000{col 57}{space 4} 2.321823{col 70}{space 3} 3.914519
+h_d_suplag1_bsl {c |}{col 17}{res}{space 2} -.327642{col 29}{space 2} .1565757{col 40}{space 1}   -2.09{col 49}{space 3}0.043{col 57}{space 4}-.6446129{col 70}{space 3}-.0106711
+{txt}h_d_suplag2_bsl {c |}{col 17}{res}{space 2} .0735966{col 29}{space 2} .2764647{col 40}{space 1}    0.27{col 49}{space 3}0.792{col 57}{space 4}-.4860768{col 70}{space 3} .6332701
+{txt}h_d_suplag3_bsl {c |}{col 17}{res}{space 2} .5082037{col 29}{space 2} .2795495{col 40}{space 1}    1.82{col 49}{space 3}0.077{col 57}{space 4}-.0577146{col 70}{space 3} 1.074122
+{txt}h_d_suplag4_bsl {c |}{col 17}{res}{space 2} -.219152{col 29}{space 2} .1991061{col 40}{space 1}   -1.10{col 49}{space 3}0.278{col 57}{space 4}-.6222211{col 70}{space 3} .1839172
+{txt}h_d_suplag5_bsl {c |}{col 17}{res}{space 2} -.102193{col 29}{space 2} .1744704{col 40}{space 1}   -0.59{col 49}{space 3}0.562{col 57}{space 4}-.4553898{col 70}{space 3} .2510039
+{txt}h_d_suplag6_bsl {c |}{col 17}{res}{space 2} .1394453{col 29}{space 2} .4472439{col 40}{space 1}    0.31{col 49}{space 3}0.757{col 57}{space 4}-.7659527{col 70}{space 3} 1.044843
+{txt}{space 10}_cons {c |}{col 17}{res}{space 2}  3.06542{col 29}{space 2} .3852759{col 40}{space 1}    7.96{col 49}{space 3}0.000{col 57}{space 4}  2.28547{col 70}{space 3}  3.84537
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
-HungerScal~l {c |}{res}        270    3.003704    1.607367          0          6
+HungerScal~l {c |}{res}        275    2.949091    1.642598          0          6
 
 {txt}added scalar:
-              e(m_ctr) =  {res}3.0037037
+              e(m_ctr) =  {res}2.9490909
 
 {p 0 7}{space 1}{text:( 1)}{space 1} treatment = 0{p_end}
 
-{txt}       F(  1,    38) ={res}    0.34
-{txt}{col 13}Prob > F ={res}    0.5646
+{txt}       F(  1,    38) ={res}    0.51
+{txt}{col 13}Prob > F ={res}    0.4795
 
 {txt}added scalar:
-             e(p_conv) =  {res}.56457294
+             e(p_conv) =  {res}.47946079
 {txt}(5 real changes made)
 (5 real changes made)
 (5 real changes made)
@@ -3203,10 +2895,10 @@ Linear regression                               Number of obs     = {res}       
                                                 {txt}R-squared         = {res}    0.4451
                                                 {txt}Root MSE          =    {res} 1.3848
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}         d_town{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}         d_town{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.0875454{col 29}{space 2}  .493022{col 40}{space 1}   -0.18{col 49}{space 3}0.860{col 57}{space 4}-1.085616{col 70}{space 3} .9105253
 {txt}{space 15} {c |}
@@ -3234,7 +2926,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}  .632582{col 29}{space 2} .2822698{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 3.890173{col 29}{space 2}  .860056{col 40}{space 1}    4.52{col 49}{space 3}0.000{col 57}{space 4}  2.14908{col 70}{space 3} 5.631265
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 {space 6}d_town {c |}{res}        276    3.064148    1.964372    .024943   6.189873
 
@@ -3255,10 +2947,10 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}  .632582{col 29}{space 2} .2822698{c
                                                 {txt}R-squared         = {res}    0.8352
                                                 {txt}Root MSE          =    {res}  1.031
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  km_to_highway{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  km_to_highway{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treatment {c |}{col 17}{res}{space 2}-.5087324{col 29}{space 2} .3109571{col 40}{space 1}   -1.64{col 49}{space 3}0.110{col 57}{space 4}-1.138232{col 70}{space 3} .1207673
 {txt}{space 15} {c |}
@@ -3286,7 +2978,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2} 1.042933{col 29}{space 2} .2808373{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 5.680603{col 29}{space 2} .6390254{col 40}{space 1}    8.89{col 49}{space 3}0.000{col 57}{space 4} 4.386963{col 70}{space 3} 6.974242
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}
-{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 km_to_high~y {c |}{res}        276    3.614735    2.792293   .0207984    7.92814
 
@@ -3304,23 +2996,21 @@ km_to_high~y {c |}{res}        276    3.614735    2.792293   .0207984    7.92814
 {com}. 
 .  
 . 
-. 
-.                 estout  `income_sel' `landuse_sel' `landuse_rice_sel'  ///
+. /**
+>                 estout  `income_sel' `landuse_sel' `landuse_rice_sel'  ///
 >                         using "$results/TA_balancing1.tex", cells("b(star fmt(3))" se(par)) ///
 >                         mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 >                         keep(treatment) ///
 >                         numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
-{res}{txt}(note: file ./results/TA_balancing1.tex not found)
-(output written to {browse  `"./results/TA_balancing1.tex"'})
-
-{com}. 
+> 
+>                         ***/
+.                         
 .                 estout  `other_crops_sel' `yield_1_sel' ///
 >                         using "$results/TA_balancing2.tex", cells("b(star fmt(3))" se(par)) ///
 >                         mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 >                         keep(treatment) ///
 >                         numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
-{res}{txt}(note: file ./results/TA_balancing2.tex not found)
-(output written to {browse  `"./results/TA_balancing2.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/TA_balancing2.tex"'})
 
 {com}. 
 .                 estout  `inputs_sel' ///
@@ -3328,8 +3018,7 @@ km_to_high~y {c |}{res}        276    3.614735    2.792293   .0207984    7.92814
 >                         mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 >                         keep(treatment) ///
 >                         numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
-{res}{txt}(note: file ./results/TA_balancing3.tex not found)
-(output written to {browse  `"./results/TA_balancing3.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/TA_balancing3.tex"'})
 
 {com}. 
 .                 estout  `irrig_sel'  `labor_sel' `dist_supply_sel' ///
@@ -3337,8 +3026,7 @@ km_to_high~y {c |}{res}        276    3.614735    2.792293   .0207984    7.92814
 >                         mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 >                         keep(treatment) ///
 >                         numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
-{res}{txt}(note: file ./results/TA_balancing4.tex not found)
-(output written to {browse  `"./results/TA_balancing4.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/TA_balancing4.tex"'})
 
 {com}. 
 .                 estout  `demogr_sel' ///
@@ -3346,8 +3034,7 @@ km_to_high~y {c |}{res}        276    3.614735    2.792293   .0207984    7.92814
 >                         mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 >                         keep(treatment) ///
 >                         numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
-{res}{txt}(note: file ./results/TA_balancing5.tex not found)
-(output written to {browse  `"./results/TA_balancing5.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/TA_balancing5.tex"'})
 
 {com}. 
 .                 estout  `livestock_sel' `housing_sel' `assets_hh_sel' `assets_farm_sel' `finance_sel' `food_sec_sel' ///
@@ -3355,16 +3042,15 @@ km_to_high~y {c |}{res}        276    3.614735    2.792293   .0207984    7.92814
 >                         mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 >                         keep(treatment) ///
 >                         numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
-{res}{txt}(note: file ./results/TA_balancing6.tex not found)
-(output written to {browse  `"./results/TA_balancing6.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/TA_balancing6.tex"'})
 
 {com}. 
 . 
 . log close
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}/home/j.gignoux/U/Travail/GMSW/analysis/replication/log/balancing tests.smcl
+       {txt}log:  {res}D:\ptta_haiti\replication\log/balancing tests.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}17 Jan 2022, 12:26:16
+ {txt}closed on:  {res} 3 May 2022, 18:08:19
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

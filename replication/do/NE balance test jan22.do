@@ -20,11 +20,12 @@ global user 0
 
 	
 
-if c(username) == "j.gignoux" {
-	cd "/home/j.gignoux/U/Travail/GMSW/analysis/replication"       /*** PATH TO BE MODIFIED ***/
-	global workdata="./data"
-	global log="./log"
-	global results="./results"
+if c(username) == "wrigh" {
+	global root "D:\ptta_haiti\replication"       /*** PATH TO BE MODIFIED ***/
+	global workdata="D:\Dropbox\Haiti\GAFSP Haiti\submission\final version\replication\data"
+	global notreleased="D:\Dropbox\Haiti\GAFSP Haiti\submission\final version\data do not include\data_hasPII_donotinclude"
+	global log="${root}\log"
+	global results="${root}/results"
 }	
 
 
@@ -34,7 +35,7 @@ if c(username) == "j.gignoux" {
 	/* info on location of input suppliers */
 	
 	drop _merge
-	merge n:1 nsm using "$workdata/distances from households.dta"
+	merge n:1 nsm using "$notreleased/distances from households.dta"
 	drop _merge
 	g d_town=min(d_FL, d_Ferrier, d_Ouanaminthe)
 	 
@@ -106,7 +107,7 @@ if c(username) == "j.gignoux" {
 	label variable harv_partial_hh_bsl "Has at least one harvest in progress" 
 	label variable harv_lost_hh_bsl "Lost at least one harvest" 
 	label variable hh_loss_pest_uc_bsl "Lost part of harvest due to pests" 
-	label variable fstMonth13_bsl "First month planted in 2013" 
+	*label variable fstMonth13_bsl "First month planted in 2013" 
 
 	local landuse_rice_sel ///
 	d_growrice_bsl n_riceplot_uc_bsl t_plot_area_uc_bsl harv_any_hh_bsl harv_lost_hh_bsl fstMonth13_bsl
@@ -208,10 +209,11 @@ if c(username) == "j.gignoux" {
 	
 	*** 5. Labor for Rice 
 	
-	
+	/**
 	foreach var of varlist n_familylabor_bsl n_unpaidlabor_bsl n_paidlabor_bsl labor_spending_bsl rp_n_familylabor_bsl rp_n_familylabor_uc_bsl  rp_n_unpaidlabor_bsl rp_n_unpaidlabor_uc_bsl rp_n_paidlabor_bsl rp_n_paidlabor_uc_bsl rp_labor_spending_bsl rp_labor_spending_uc_bsl {
 	gen L`var' = ln(`var' + 1) 
 	}
+	**/ 
 	
 	local labor ///
 	d_familylabor_bsl d_unpaidlabor_bsl d_paidlabor_bsl n_familylabor_bsl Ln_familylabor_bsl n_unpaidlabor_bsl Ln_unpaidlabor_bsl n_paidlabor_bsl Ln_paidlabor_bsl ///
@@ -226,11 +228,12 @@ if c(username) == "j.gignoux" {
 
 
 	*** 6. Inputs on rice 
-	
+	/***
 	foreach var of varlist seed_spending_bsl input_spending_bsl total_spending_bsl fert_spending_bsl pest_spending_bsl urea_spending_bsl npk_spending_bsl allchem_spending_bsl ///
 	rp_seed_spending_uc_bsl rp_input_spending_uc_bsl rp_fert_spending_uc_bsl rp_pest_spending_uc_bsl  rp_urea_spending_uc_bsl  rp_npk_spending_uc_bsl rp_allchem_spending_uc_bsl {
 	gen L`var' = ln(`var' + 1)
 	}
+	***/ 
 	
 	local inputs ///
 	ImprovedRice_bsl inputs_bsl fertilizer_bsl pesticide_bsl compost_bsl lime_bsl urea_bsl npk_bsl allchem_bsl ///
@@ -284,11 +287,11 @@ if c(username) == "j.gignoux" {
 	*** 9. Finance 
 	
 	local finance ///
-		savings_fl_bsl bank_bsl askloan_bank_bsl refloan_bsl
+		savings_fl_bsl bnk_bsl askloan_bank_bsl refloan_bsl
 	local finance_l "Finance" 
 		
 	local finance_sel ///
-		savings_fl_bsl bank_bsl askloan_bank_bsl refloan_bsl
+		savings_fl_bsl bnk_bsl askloan_bank_bsl refloan_bsl
 		
 		
 	*** 10. Household demographics 
@@ -371,7 +374,14 @@ log using "$log/balancing tests", replace
 
 local groups income landuse landuse_rice other_crops yield_1 yield_2  irrig labor inputs   livestock housing assets_hh assets_farm finance demogr food_sec dist_supply
 
+
+/**
 local groups_sel demogr_sel income_sel landuse_sel landuse_rice_sel other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
+***/
+
+local groups_sel demogr_sel income_sel landuse_sel  other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
+
+***/
 
 *local groups_sel demogr_sel 
 
@@ -443,13 +453,15 @@ preserve
 
  
 
-
+/**
 		estout  `income_sel' `landuse_sel' `landuse_rice_sel'  ///
 			using "$results/TA_balancing1.tex", cells("b(star fmt(3))" se(par)) ///
 			mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 			keep(treatment) ///
 			numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
 
+			***/
+			
 		estout  `other_crops_sel' `yield_1_sel' ///
 			using "$results/TA_balancing2.tex", cells("b(star fmt(3))" se(par)) ///
 			mgroups(none) collabels(none) eqlabels(none) style(tex) ///
