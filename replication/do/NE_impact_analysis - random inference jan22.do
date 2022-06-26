@@ -19,12 +19,12 @@ set matsize 1000
 
 global user 3
 
-
-if c(username) == "j.gignoux" {
-	cd "/home/j.gignoux/U/Travail/GMSW/analysis/replication"       /*** PATH TO BE MODIFIED ***/
-	global workdata="./data"
-	global log="./log"
-	global results="./results"
+if c(username) == "wrigh" {
+	global root "D:\ptta_haiti\replication"       /*** PATH TO BE MODIFIED ***/
+	global workdata="D:\Dropbox\Haiti\GAFSP Haiti\submission\final version\replication\data"
+	global notreleased="D:\Dropbox\Haiti\GAFSP Haiti\submission\final version\data do not include\data_hasPII_donotinclude"
+	global log="${root}\log"
+	global results="${root}/results"
 }	
 
 

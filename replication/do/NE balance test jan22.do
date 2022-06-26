@@ -375,10 +375,10 @@ log using "$log/balancing tests", replace
 local groups income landuse landuse_rice other_crops yield_1 yield_2  irrig labor inputs   livestock housing assets_hh assets_farm finance demogr food_sec dist_supply
 
 
-/**
-local groups_sel demogr_sel income_sel landuse_sel landuse_rice_sel other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
-***/
 
+local groups_sel demogr_sel income_sel landuse_sel landuse_rice_sel other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
+
+/**
 local groups_sel demogr_sel income_sel landuse_sel  other_crops_sel yield_1_sel  irrig_sel labor_sel inputs_sel livestock_sel housing_sel assets_hh_sel assets_farm_sel finance_sel food_sec_sel dist_supply_sel
 
 ***/
@@ -453,14 +453,17 @@ preserve
 
  
 
-/**
+ /**
+
 		estout  `income_sel' `landuse_sel' `landuse_rice_sel'  ///
 			using "$results/TA_balancing1.tex", cells("b(star fmt(3))" se(par)) ///
 			mgroups(none) collabels(none) eqlabels(none) style(tex) ///
 			keep(treatment) ///
 			numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
+***/ 
 
-			***/
+
+		/*** 
 			
 		estout  `other_crops_sel' `yield_1_sel' ///
 			using "$results/TA_balancing2.tex", cells("b(star fmt(3))" se(par)) ///
@@ -468,6 +471,8 @@ preserve
 			keep(treatment) ///
 			numbers(( )) stats(p_conv m_ctr N, fmt(%9.3f %9.3f %9.0f) labels("p-value conv." "Control mean" "Observations")) replace
 
+			***/
+			
 		estout  `inputs_sel' ///
 			using "$results/TA_balancing3.tex", cells("b(star fmt(3))" se(par)) ///
 			mgroups(none) collabels(none) eqlabels(none) style(tex) ///

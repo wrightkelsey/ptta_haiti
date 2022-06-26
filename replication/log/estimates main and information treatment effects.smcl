@@ -1,9 +1,9 @@
 {smcl}
-{txt}{sf}{ul off}{.-}
+{com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}/home/j.gignoux/U/Travail/GMSW/analysis/replication/log/estimates main and information treatment effects.smcl
+       {txt}log:  {res}D:\ptta_haiti\replication\log/estimates main and information treatment effects.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}17 Jan 2022, 12:23:18
+ {txt}opened on:  {res}16 Jun 2022, 17:39:37
 {txt}
 {com}. 
 . 
@@ -152,18 +152,18 @@
 {txt}123{com}. {c )-}
 
 
-{txt}Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}     12.47
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.2040
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1684
-{txt}{col 49}Root MSE{col 67}= {res}    0.4195
+{txt}{col 1}Linear regression, absorbing indicators{col 53}{lalign 17:Number of obs}{col 70} = {res}{ralign 6:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 53}{lalign 17:No. of categories}{col 70} = {res}{ralign 6:14}
+{txt}{col 53}{lalign 17:F({res:9}, {res:38})}{col 70} = {res}{ralign 6:12.47}
+{txt}{col 53}{lalign 17:Prob > F}{col 70} = {res}{ralign 6:0.0000}
+{txt}{col 53}{lalign 17:R-squared}{col 70} = {res}{ralign 6:0.2040}
+{txt}{col 53}{lalign 17:Adj R-squared}{col 70} = {res}{ralign 6:0.1684}
+{txt}{col 53}{lalign 17:Root MSE}{col 70} = {res}{ralign 6:0.4195}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}  d_thinkben_14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}  d_thinkben_14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-.3439082{col 29}{space 2} .0654259{col 40}{space 1}   -5.26{col 49}{space 3}0.000{col 57}{space 4}-.4763561{col 70}{space 3}-.2114603
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-.2430899{col 29}{space 2} .0724552{col 40}{space 1}   -3.36{col 49}{space 3}0.002{col 57}{space 4}-.3897678{col 70}{space 3}-.0964119
@@ -177,7 +177,7 @@
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .7858667{col 29}{space 2} .0616199{col 40}{space 1}   12.75{col 49}{space 3}0.000{col 57}{space 4} .6611238{col 70}{space 3} .9106097
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 d_thinkb~_14 {c |}{res}        275    .8654545    .3418595          0          1
 
@@ -209,18 +209,18 @@ added macro:
 {txt}note: treat_no_inf omitted because of collinearity
 {txt}note: control_inf omitted because of collinearity
 {res}
-{txt}Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       260
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        13
-{txt}{col 49}F({res}   7{txt},{res}     37{txt}){col 67}= {res}      6.57
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1382
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0700
-{txt}{col 49}Root MSE{col 67}= {res}    0.4701
+{txt}{col 1}Linear regression, absorbing indicators{col 53}{lalign 17:Number of obs}{col 70} = {res}{ralign 6:260}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 53}{lalign 17:No. of categories}{col 70} = {res}{ralign 6:13}
+{txt}{col 53}{lalign 17:F({res:7}, {res:37})}{col 70} = {res}{ralign 6:6.57}
+{txt}{col 53}{lalign 17:Prob > F}{col 70} = {res}{ralign 6:0.0000}
+{txt}{col 53}{lalign 17:R-squared}{col 70} = {res}{ralign 6:0.1382}
+{txt}{col 53}{lalign 17:Adj R-squared}{col 70} = {res}{ralign 6:0.0700}
+{txt}{col 53}{lalign 17:Root MSE}{col 70} = {res}{ralign 6:0.4701}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:38} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:38} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1} d_thinkben_n14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1} d_thinkben_n14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-.2977602{col 29}{space 2} .0647147{col 40}{space 1}   -4.60{col 49}{space 3}0.000{col 57}{space 4}-.4288847{col 70}{space 3}-.1666357
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}        0{col 29}{txt}  (omitted)
@@ -234,7 +234,7 @@ h_d_suplag1_bsl {c |}{col 17}{res}{space 2}-.0494358{col 29}{space 2} .0711731{c
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .7584504{col 29}{space 2} .0606429{col 40}{space 1}   12.51{col 49}{space 3}0.000{col 57}{space 4} .6355763{col 70}{space 3} .8813246
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 d_thinkb~n14 {c |}{res}        140    .7142857    .4533761          0          1
 
@@ -266,18 +266,18 @@ added macro:
                  e(yr) : "{res:2014}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}     10.84
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1523
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1126
-{txt}{col 49}Root MSE{col 67}= {res}  869.6873
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:10.84}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1523}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1126}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:869.6873}
 
-{txt}{ralign 91:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 91:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 27}{c |}{col 39}    Robust
-{col 1} t_plotRiceYield5_1_uc_14{col 27}{c |}      Coef.{col 39}   Std. Err.{col 51}      t{col 59}   P>|t|{col 67}     [95% Con{col 80}f. Interval]
+{col 1} t_plotRiceYield5_1_uc_14{col 27}{c |} Coefficient{col 39}  std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
 {hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 16}treat_inf {c |}{col 27}{res}{space 2} 96.69183{col 39}{space 2} 112.7925{col 50}{space 1}    0.86{col 59}{space 3}0.397{col 67}{space 4}-131.6446{col 80}{space 3} 325.0283
 {txt}{space 13}treat_no_inf {c |}{col 27}{res}{space 2} 2.775604{col 39}{space 2} 101.1888{col 50}{space 1}    0.03{col 59}{space 3}0.978{col 67}{space 4}-202.0705{col 80}{space 3} 207.6217
@@ -292,7 +292,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 20}_cons {c |}{col 27}{res}{space 2} 573.8256{col 39}{space 2} 82.22626{col 50}{space 1}    6.98{col 59}{space 3}0.000{col 67}{space 4} 407.3673{col 80}{space 3}  740.284
 {txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 t_plotRic~14 {c |}{res}        275    966.0243    955.9511          0   4465.116
 
@@ -322,18 +322,18 @@ t_plotRic~14 {c |}{res}        275    966.0243    955.9511          0   4465.116
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}      8.00
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1865
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1484
-{txt}{col 49}Root MSE{col 67}= {res}  881.7147
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:8.00}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1865}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1484}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:881.7147}
 
-{txt}{ralign 91:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 91:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 27}{c |}{col 39}    Robust
-{col 1} t_plotRiceYield5_1_uc_15{col 27}{c |}      Coef.{col 39}   Std. Err.{col 51}      t{col 59}   P>|t|{col 67}     [95% Con{col 80}f. Interval]
+{col 1} t_plotRiceYield5_1_uc_15{col 27}{c |} Coefficient{col 39}  std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
 {hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 16}treat_inf {c |}{col 27}{res}{space 2}-224.4606{col 39}{space 2} 93.36905{col 50}{space 1}   -2.40{col 59}{space 3}0.021{col 67}{space 4}-413.4764{col 80}{space 3}-35.44487
 {txt}{space 13}treat_no_inf {c |}{col 27}{res}{space 2}-202.0898{col 39}{space 2} 104.6578{col 50}{space 1}   -1.93{col 59}{space 3}0.061{col 67}{space 4}-413.9585{col 80}{space 3} 9.778957
@@ -348,7 +348,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 20}_cons {c |}{col 27}{res}{space 2} 440.7323{col 39}{space 2} 94.42177{col 50}{space 1}    4.67{col 59}{space 3}0.000{col 67}{space 4} 249.5854{col 80}{space 3} 631.8792
 {txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 t_plotRic~15 {c |}{res}        275    765.5409    1054.414          0    5358.14
 
@@ -378,18 +378,18 @@ t_plotRic~15 {c |}{res}        275    765.5409    1054.414          0    5358.14
 added macro:
                  e(yr) : "{res:2015}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      6.28
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1483
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1102
-{txt}{col 49}Root MSE{col 67}= {res}  971.1314
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:9}, {res:38})}{col 68} = {res}{ralign 8:6.28}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1483}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1102}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:971.1314}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}F_t_plotRice~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}F_t_plotRice~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-214.7211{col 29}{space 2} 113.8333{col 40}{space 1}   -1.89{col 49}{space 3}0.067{col 57}{space 4}-445.1645{col 70}{space 3} 15.72236
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-289.7937{col 29}{space 2} 119.7193{col 40}{space 1}   -2.42{col 49}{space 3}0.020{col 57}{space 4}-532.1528{col 70}{space 3}-47.43467
@@ -403,7 +403,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 582.9064{col 29}{space 2}  116.413{col 40}{space 1}    5.01{col 49}{space 3}0.000{col 57}{space 4} 347.2406{col 70}{space 3} 818.5721
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 F_t_plotR~15 {c |}{res}        275    810.4368    1101.618          0   3896.829
 
@@ -434,18 +434,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}      5.88
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1603
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1210
-{txt}{col 49}Root MSE{col 67}= {res}  711.0383
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:5.88}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1603}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1210}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:711.0383}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1} profit_2_uc_14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1} profit_2_uc_14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2} 55.92244{col 29}{space 2} 85.06254{col 40}{space 1}    0.66{col 49}{space 3}0.515{col 57}{space 4}-116.2777{col 70}{space 3} 228.1225
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2} 45.69361{col 29}{space 2} 80.07421{col 40}{space 1}    0.57{col 49}{space 3}0.572{col 57}{space 4}-116.4081{col 70}{space 3} 207.7954
@@ -460,7 +460,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 30.97455{col 29}{space 2} 79.54948{col 40}{space 1}    0.39{col 49}{space 3}0.699{col 57}{space 4} -130.065{col 70}{space 3} 192.0141
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 profit_2_~14 {c |}{res}        275    113.5889    778.5722  -3424.749     3209.8
 
@@ -490,18 +490,18 @@ profit_2_~14 {c |}{res}        275    113.5889    778.5722  -3424.749     3209.8
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}      5.48
-{txt}{col 49}Prob > F{col 67}= {res}    0.0001
-{txt}{col 49}R-squared{col 67}= {res}    0.1307
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0900
-{txt}{col 49}Root MSE{col 67}= {res}  512.6744
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:5.48}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0001}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1307}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0900}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:512.6744}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1} profit_2_uc_15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1} profit_2_uc_15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-121.4201{col 29}{space 2} 64.15876{col 40}{space 1}   -1.89{col 49}{space 3}0.066{col 57}{space 4}-251.3027{col 70}{space 3} 8.462511
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-148.8196{col 29}{space 2} 69.50224{col 40}{space 1}   -2.14{col 49}{space 3}0.039{col 57}{space 4}-289.5195{col 70}{space 3}-8.119658
@@ -516,7 +516,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 62.81741{col 29}{space 2} 47.64896{col 40}{space 1}    1.32{col 49}{space 3}0.195{col 57}{space 4}-33.64287{col 70}{space 3} 159.2777
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 profit_2_~15 {c |}{res}        275    2.383184    466.8278      -2123   1360.282
 
@@ -546,18 +546,18 @@ profit_2_~15 {c |}{res}        275    2.383184    466.8278      -2123   1360.282
 added macro:
                  e(yr) : "{res:2015}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      4.05
-{txt}{col 49}Prob > F{col 67}= {res}    0.0011
-{txt}{col 49}R-squared{col 67}= {res}    0.0966
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0562
-{txt}{col 49}Root MSE{col 67}= {res}  324.4846
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:9}, {res:38})}{col 68} = {res}{ralign 8:4.05}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0011}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.0966}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0562}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:324.4846}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}F_profit_2_u~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}F_profit_2_u~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-17.14668{col 29}{space 2} 44.69491{col 40}{space 1}   -0.38{col 49}{space 3}0.703{col 57}{space 4}-107.6268{col 70}{space 3} 73.33344
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-80.15546{col 29}{space 2} 42.18921{col 40}{space 1}   -1.90{col 49}{space 3}0.065{col 57}{space 4} -165.563{col 70}{space 3} 5.252124
@@ -571,7 +571,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 20.86246{col 29}{space 2}  30.4382{col 40}{space 1}    0.69{col 49}{space 3}0.497{col 57}{space 4}-40.75647{col 70}{space 3} 82.48138
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 F_profit_~15 {c |}{res}        275    18.98745    376.2686    -2161.5   1183.816
 
@@ -602,18 +602,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}      9.54
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1677
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1287
-{txt}{col 49}Root MSE{col 67}= {res}  714.3897
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:9.54}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1677}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1287}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:714.3897}
 
-{txt}{ralign 87:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 87:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 23}{c |}{col 35}    Robust
-{col 1} profit_vouch_2_uc_14{col 23}{c |}      Coef.{col 35}   Std. Err.{col 47}      t{col 55}   P>|t|{col 63}     [95% Con{col 76}f. Interval]
+{col 1} profit_vouch_2_uc_14{col 23}{c |} Coefficient{col 35}  std. err.{col 47}      t{col 55}   P>|t|{col 63}     [95% con{col 76}f. interval]
 {hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 12}treat_inf {c |}{col 23}{res}{space 2} 266.2587{col 35}{space 2}  83.0748{col 46}{space 1}    3.21{col 55}{space 3}0.003{col 63}{space 4} 98.08257{col 76}{space 3} 434.4348
 {txt}{space 9}treat_no_inf {c |}{col 23}{res}{space 2} 237.4754{col 35}{space 2} 82.83706{col 46}{space 1}    2.87{col 55}{space 3}0.007{col 63}{space 4} 69.78056{col 76}{space 3} 405.1703
@@ -628,7 +628,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 16}_cons {c |}{col 23}{res}{space 2}  9.91429{col 35}{space 2} 81.31082{col 46}{space 1}    0.12{col 55}{space 3}0.904{col 63}{space 4}-154.6909{col 76}{space 3} 174.5194
 {txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 profit_vo~14 {c |}{res}        275    114.7489     780.781  -3424.749     3209.8
 
@@ -659,18 +659,18 @@ added macro:
                  e(yr) : "{res:2014}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}      2.65
-{txt}{col 49}Prob > F{col 67}= {res}    0.0148
-{txt}{col 49}R-squared{col 67}= {res}    0.1137
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0722
-{txt}{col 49}Root MSE{col 67}= {res}  206.9258
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:2.65}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0148}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1137}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0722}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:206.9258}
 
-{txt}{ralign 89:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 89:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 24}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 25}{c |}{col 37}    Robust
-{col 1} qty_allchem_kgha_uc_14{col 25}{c |}      Coef.{col 37}   Std. Err.{col 49}      t{col 57}   P>|t|{col 65}     [95% Con{col 78}f. Interval]
+{col 1} qty_allchem_kgha_uc_14{col 25}{c |} Coefficient{col 37}  std. err.{col 49}      t{col 57}   P>|t|{col 65}     [95% con{col 78}f. interval]
 {hline 24}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 14}treat_inf {c |}{col 25}{res}{space 2} 15.20528{col 37}{space 2} 32.38183{col 48}{space 1}    0.47{col 57}{space 3}0.641{col 65}{space 4}-50.34829{col 78}{space 3} 80.75886
 {txt}{space 11}treat_no_inf {c |}{col 25}{res}{space 2} 24.66455{col 37}{space 2} 31.85476{col 48}{space 1}    0.77{col 57}{space 3}0.444{col 65}{space 4}-39.82205{col 78}{space 3} 89.15114
@@ -685,7 +685,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 18}_cons {c |}{col 25}{res}{space 2} 128.7968{col 37}{space 2} 24.69454{col 48}{space 1}    5.22{col 57}{space 3}0.000{col 65}{space 4} 78.80535{col 78}{space 3} 178.7883
 {txt}{hline 24}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 qty_all~c_14 {c |}{res}        275     214.787    214.2622          0   1306.977
 
@@ -715,18 +715,18 @@ qty_all~c_14 {c |}{res}        275     214.787    214.2622          0   1306.977
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}      8.91
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1061
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0642
-{txt}{col 49}Root MSE{col 67}= {res}  224.3024
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:8.91}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1061}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0642}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:224.3024}
 
-{txt}{ralign 89:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 89:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 24}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 25}{c |}{col 37}    Robust
-{col 1} qty_allchem_kgha_uc_15{col 25}{c |}      Coef.{col 37}   Std. Err.{col 49}      t{col 57}   P>|t|{col 65}     [95% Con{col 78}f. Interval]
+{col 1} qty_allchem_kgha_uc_15{col 25}{c |} Coefficient{col 37}  std. err.{col 49}      t{col 57}   P>|t|{col 65}     [95% con{col 78}f. interval]
 {hline 24}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 14}treat_inf {c |}{col 25}{res}{space 2}-26.89681{col 37}{space 2} 27.27057{col 48}{space 1}   -0.99{col 57}{space 3}0.330{col 65}{space 4}-82.10319{col 78}{space 3} 28.30956
 {txt}{space 11}treat_no_inf {c |}{col 25}{res}{space 2}  -40.768{col 37}{space 2} 30.10267{col 48}{space 1}   -1.35{col 57}{space 3}0.184{col 65}{space 4}-101.7077{col 78}{space 3} 20.17167
@@ -741,7 +741,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 18}_cons {c |}{col 25}{res}{space 2} 124.2288{col 37}{space 2} 32.71215{col 48}{space 1}    3.80{col 57}{space 3}0.001{col 65}{space 4} 58.00655{col 78}{space 3} 190.4511
 {txt}{hline 24}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 qty_all~c_15 {c |}{res}        275    194.9884    275.4667          0   3089.613
 
@@ -772,18 +772,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      7.61
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.2030
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1673
-{txt}{col 49}Root MSE{col 67}= {res}  303.8615
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:9}, {res:38})}{col 68} = {res}{ralign 8:7.61}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.2030}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1673}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:303.8615}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_chempest_~14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_chempest_~14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2} 12.84256{col 29}{space 2} 45.60365{col 40}{space 1}    0.28{col 49}{space 3}0.780{col 57}{space 4} -79.4772{col 70}{space 3} 105.1623
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-59.41059{col 29}{space 2}  35.0407{col 40}{space 1}   -1.70{col 49}{space 3}0.098{col 57}{space 4}-130.3468{col 70}{space 3}  11.5256
@@ -797,7 +797,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 132.9126{col 29}{space 2} 49.75956{col 40}{space 1}    2.67{col 49}{space 3}0.011{col 57}{space 4} 32.17967{col 70}{space 3} 233.6456
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_chempe~14 {c |}{res}        275    305.3078    363.0856          0    1873.74
 
@@ -827,18 +827,18 @@ rp_chempe~14 {c |}{res}        275    305.3078    363.0856          0    1873.74
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      6.95
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1370
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0984
-{txt}{col 49}Root MSE{col 67}= {res}  226.0851
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:9}, {res:38})}{col 68} = {res}{ralign 8:6.95}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1370}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0984}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:226.0851}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}rp_chempest_~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}rp_chempest_~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-18.92614{col 29}{space 2} 38.98166{col 40}{space 1}   -0.49{col 49}{space 3}0.630{col 57}{space 4}-97.84038{col 70}{space 3} 59.98811
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-55.06922{col 29}{space 2} 35.73713{col 40}{space 1}   -1.54{col 49}{space 3}0.132{col 57}{space 4}-127.4152{col 70}{space 3} 17.27681
@@ -852,7 +852,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 93.64271{col 29}{space 2} 38.49099{col 40}{space 1}    2.43{col 49}{space 3}0.020{col 57}{space 4} 15.72178{col 70}{space 3} 171.5637
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_chempe~15 {c |}{res}        275    190.3361    266.1656          0   1206.185
 
@@ -882,18 +882,18 @@ rp_chempe~15 {c |}{res}        275    190.3361    266.1656          0   1206.185
 added macro:
                  e(yr) : "{res:2015}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      5.84
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1302
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0913
-{txt}{col 49}Root MSE{col 67}= {res}  107.7063
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:9}, {res:38})}{col 68} = {res}{ralign 8:5.84}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1302}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0913}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:107.7063}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}F_rp_chempes~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}F_rp_chempes~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-15.06027{col 29}{space 2} 13.28063{col 40}{space 1}   -1.13{col 49}{space 3}0.264{col 57}{space 4} -41.9455{col 70}{space 3} 11.82496
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-24.40668{col 29}{space 2} 15.03994{col 40}{space 1}   -1.62{col 49}{space 3}0.113{col 57}{space 4}-54.85344{col 70}{space 3} 6.040082
@@ -907,7 +907,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 60.54918{col 29}{space 2} 15.25971{col 40}{space 1}    3.97{col 49}{space 3}0.000{col 57}{space 4} 29.65751{col 70}{space 3} 91.44086
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 F_rp_chem~15 {c |}{res}        275    97.75845    126.1775          0      613.8
 
@@ -938,18 +938,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}     21.06
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.2618
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.2272
-{txt}{col 49}Root MSE{col 67}= {res}  351.1539
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:21.06}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.2618}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.2272}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:351.1539}
 
-{txt}{ralign 92:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 92:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 27}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 28}{c |}{col 40}    Robust
-{col 1} rp_labor_spendingEX_uc_14{col 28}{c |}      Coef.{col 40}   Std. Err.{col 52}      t{col 60}   P>|t|{col 68}     [95% Con{col 81}f. Interval]
+{col 1} rp_labor_spendingEX_uc_14{col 28}{c |} Coefficient{col 40}  std. err.{col 52}      t{col 60}   P>|t|{col 68}     [95% con{col 81}f. interval]
 {hline 27}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 17}treat_inf {c |}{col 28}{res}{space 2} 14.47904{col 40}{space 2} 40.36044{col 51}{space 1}    0.36{col 60}{space 3}0.722{col 68}{space 4}-67.22639{col 81}{space 3} 96.18447
 {txt}{space 14}treat_no_inf {c |}{col 28}{res}{space 2}-12.13467{col 40}{space 2} 35.22759{col 51}{space 1}   -0.34{col 60}{space 3}0.732{col 68}{space 4} -83.4492{col 81}{space 3} 59.17985
@@ -964,7 +964,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 21}_cons {c |}{col 28}{res}{space 2} 194.7871{col 40}{space 2} 47.41053{col 51}{space 1}    4.11{col 60}{space 3}0.000{col 68}{space 4} 98.80951{col 81}{space 3} 290.7647
 {txt}{hline 27}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_labor_~14 {c |}{res}        275    391.1514    415.0863          0   2094.532
 
@@ -994,18 +994,18 @@ rp_labor_~14 {c |}{res}        275    391.1514    415.0863          0   2094.532
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}     16.48
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.2306
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1945
-{txt}{col 49}Root MSE{col 67}= {res}  301.2691
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:16.48}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.2306}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1945}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:301.2691}
 
-{txt}{ralign 92:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 92:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 27}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 28}{c |}{col 40}    Robust
-{col 1} rp_labor_spendingEX_uc_15{col 28}{c |}      Coef.{col 40}   Std. Err.{col 52}      t{col 60}   P>|t|{col 68}     [95% Con{col 81}f. Interval]
+{col 1} rp_labor_spendingEX_uc_15{col 28}{c |} Coefficient{col 40}  std. err.{col 52}      t{col 60}   P>|t|{col 68}     [95% con{col 81}f. interval]
 {hline 27}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 17}treat_inf {c |}{col 28}{res}{space 2}-17.31149{col 40}{space 2} 44.55959{col 51}{space 1}   -0.39{col 60}{space 3}0.700{col 68}{space 4}-107.5177{col 81}{space 3} 72.89468
 {txt}{space 14}treat_no_inf {c |}{col 28}{res}{space 2}-33.39025{col 40}{space 2}  39.8118{col 51}{space 1}   -0.84{col 60}{space 3}0.407{col 68}{space 4} -113.985{col 81}{space 3} 47.20453
@@ -1020,7 +1020,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 21}_cons {c |}{col 28}{res}{space 2} 108.5738{col 40}{space 2} 36.31746{col 51}{space 1}    2.99{col 60}{space 3}0.005{col 68}{space 4} 35.05298{col 81}{space 3} 182.0947
 {txt}{hline 27}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 rp_labor_~15 {c |}{res}        275    256.5442    339.4145          0       1672
 
@@ -1050,18 +1050,18 @@ rp_labor_~15 {c |}{res}        275    256.5442    339.4145          0       1672
 added macro:
                  e(yr) : "{res:2015}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}  10{txt},{res}     38{txt}){col 67}= {res}     16.98
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.1913
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.1535
-{txt}{col 49}Root MSE{col 67}= {res}  141.9718
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:10}, {res:38})}{col 68} = {res}{ralign 8:16.98}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0000}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.1913}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.1535}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:141.9718}
 
-{txt}{ralign 94:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 94:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 30}{c |}{col 42}    Robust
-{col 1} F_rp_labor_spendingEX_uc_15{col 30}{c |}      Coef.{col 42}   Std. Err.{col 54}      t{col 62}   P>|t|{col 70}     [95% Con{col 83}f. Interval]
+{col 1} F_rp_labor_spendingEX_uc_15{col 30}{c |} Coefficient{col 42}  std. err.{col 54}      t{col 62}   P>|t|{col 70}     [95% con{col 83}f. interval]
 {hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 19}treat_inf {c |}{col 30}{res}{space 2}-10.83641{col 42}{space 2} 19.39364{col 53}{space 1}   -0.56{col 62}{space 3}0.580{col 70}{space 4}-50.09679{col 83}{space 3} 28.42396
 {txt}{space 16}treat_no_inf {c |}{col 30}{res}{space 2}  -21.113{col 42}{space 2}  20.1807{col 53}{space 1}   -1.05{col 62}{space 3}0.302{col 70}{space 4}-61.96669{col 83}{space 3} 19.74069
@@ -1076,7 +1076,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 23}_cons {c |}{col 30}{res}{space 2} 82.24169{col 42}{space 2} 20.37799{col 53}{space 1}    4.04{col 62}{space 3}0.000{col 70}{space 4} 40.98861{col 83}{space 3} 123.4948
 {txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 F_rp_labo~15 {c |}{res}        275     137.621     159.307          0     764.61
 
@@ -1107,18 +1107,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      4.60
-{txt}{col 49}Prob > F{col 67}= {res}    0.0004
-{txt}{col 49}R-squared{col 67}= {res}    0.0894
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0487
-{txt}{col 49}Root MSE{col 67}= {res}    0.2966
+{col 1}Linear regression, absorbing indicators{col 53}{lalign 17:Number of obs}{col 70} = {res}{ralign 6:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 53}{lalign 17:No. of categories}{col 70} = {res}{ralign 6:14}
+{txt}{col 53}{lalign 17:F({res:9}, {res:38})}{col 70} = {res}{ralign 6:4.60}
+{txt}{col 53}{lalign 17:Prob > F}{col 70} = {res}{ralign 6:0.0004}
+{txt}{col 53}{lalign 17:R-squared}{col 70} = {res}{ralign 6:0.0894}
+{txt}{col 53}{lalign 17:Adj R-squared}{col 70} = {res}{ralign 6:0.0487}
+{txt}{col 53}{lalign 17:Root MSE}{col 70} = {res}{ralign 6:0.2966}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}askloaninp_b~14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}askloaninp_b~14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-.0575498{col 29}{space 2} .0421976{col 40}{space 1}   -1.36{col 49}{space 3}0.181{col 57}{space 4}-.1429743{col 70}{space 3} .0278747
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-.0789636{col 29}{space 2} .0439081{col 40}{space 1}   -1.80{col 49}{space 3}0.080{col 57}{space 4} -.167851{col 70}{space 3} .0099237
@@ -1132,7 +1132,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .0995746{col 29}{space 2} .0473911{col 40}{space 1}    2.10{col 49}{space 3}0.042{col 57}{space 4} .0036363{col 70}{space 3}  .195513
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 askloan~k_14 {c |}{res}        275    .1381818    .3457199          0          1
 
@@ -1162,18 +1162,18 @@ askloan~k_14 {c |}{res}        275    .1381818    .3457199          0          1
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      3.98
-{txt}{col 49}Prob > F{col 67}= {res}    0.0012
-{txt}{col 49}R-squared{col 67}= {res}    0.0758
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0345
-{txt}{col 49}Root MSE{col 67}= {res}    0.3977
+{col 1}Linear regression, absorbing indicators{col 53}{lalign 17:Number of obs}{col 70} = {res}{ralign 6:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 53}{lalign 17:No. of categories}{col 70} = {res}{ralign 6:14}
+{txt}{col 53}{lalign 17:F({res:9}, {res:38})}{col 70} = {res}{ralign 6:3.98}
+{txt}{col 53}{lalign 17:Prob > F}{col 70} = {res}{ralign 6:0.0012}
+{txt}{col 53}{lalign 17:R-squared}{col 70} = {res}{ralign 6:0.0758}
+{txt}{col 53}{lalign 17:Adj R-squared}{col 70} = {res}{ralign 6:0.0345}
+{txt}{col 53}{lalign 17:Root MSE}{col 70} = {res}{ralign 6:0.3977}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}askloaninp_b~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}askloaninp_b~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2} .0311126{col 29}{space 2} .0428928{col 40}{space 1}    0.73{col 49}{space 3}0.473{col 57}{space 4}-.0557195{col 70}{space 3} .1179446
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-.0549329{col 29}{space 2} .0424441{col 40}{space 1}   -1.29{col 49}{space 3}0.203{col 57}{space 4}-.1408565{col 70}{space 3} .0309906
@@ -1187,7 +1187,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1445559{col 29}{space 2} .0468848{col 40}{space 1}    3.08{col 49}{space 3}0.004{col 57}{space 4} .0496425{col 70}{space 3} .2394692
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 askloan~k_15 {c |}{res}        275    .2109091    .4086977          0          1
 
@@ -1218,18 +1218,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      3.08
-{txt}{col 49}Prob > F{col 67}= {res}    0.0072
-{txt}{col 49}R-squared{col 67}= {res}    0.0671
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0254
-{txt}{col 49}Root MSE{col 67}= {res}  227.2788
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:9}, {res:38})}{col 68} = {res}{ralign 8:3.08}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0072}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.0671}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0254}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:227.2788}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}obtloanamt_b~14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}obtloanamt_b~14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2} 1.009635{col 29}{space 2} 40.41155{col 40}{space 1}    0.02{col 49}{space 3}0.980{col 57}{space 4}-80.79927{col 70}{space 3} 82.81854
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2} -12.2723{col 29}{space 2} 34.60198{col 40}{space 1}   -0.35{col 49}{space 3}0.725{col 57}{space 4}-82.32034{col 70}{space 3} 57.77573
@@ -1243,7 +1243,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 60.88308{col 29}{space 2} 24.52606{col 40}{space 1}    2.48{col 49}{space 3}0.018{col 57}{space 4} 11.23267{col 70}{space 3} 110.5335
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 obtloan~k_14 {c |}{res}        275     100.852    263.2667          0       1650
 
@@ -1273,18 +1273,18 @@ obtloan~k_14 {c |}{res}        275     100.852    263.2667          0       1650
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      2.50
-{txt}{col 49}Prob > F{col 67}= {res}    0.0234
-{txt}{col 49}R-squared{col 67}= {res}    0.0940
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0535
-{txt}{col 49}Root MSE{col 67}= {res}  281.8176
+{col 1}Linear regression, absorbing indicators{col 51}{lalign 17:Number of obs}{col 68} = {res}{ralign 8:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 51}{lalign 17:No. of categories}{col 68} = {res}{ralign 8:14}
+{txt}{col 51}{lalign 17:F({res:9}, {res:38})}{col 68} = {res}{ralign 8:2.50}
+{txt}{col 51}{lalign 17:Prob > F}{col 68} = {res}{ralign 8:0.0234}
+{txt}{col 51}{lalign 17:R-squared}{col 68} = {res}{ralign 8:0.0940}
+{txt}{col 51}{lalign 17:Adj R-squared}{col 68} = {res}{ralign 8:0.0535}
+{txt}{col 51}{lalign 17:Root MSE}{col 68} = {res}{ralign 8:281.8176}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}obtloanamt_b~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}obtloanamt_b~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2} -31.2887{col 29}{space 2} 42.22935{col 40}{space 1}   -0.74{col 49}{space 3}0.463{col 57}{space 4}-116.7775{col 70}{space 3} 54.20014
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-80.90279{col 29}{space 2} 37.45376{col 40}{space 1}   -2.16{col 49}{space 3}0.037{col 57}{space 4} -156.724{col 70}{space 3} -5.08162
@@ -1298,7 +1298,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 109.3515{col 29}{space 2}  31.3448{col 40}{space 1}    3.49{col 49}{space 3}0.001{col 57}{space 4}  45.8973{col 70}{space 3} 172.8058
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 obtloan~k_15 {c |}{res}        275      175.54    347.5634          0       1650
 
@@ -1329,18 +1329,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      3.95
-{txt}{col 49}Prob > F{col 67}= {res}    0.0013
-{txt}{col 49}R-squared{col 67}= {res}    0.0744
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0330
-{txt}{col 49}Root MSE{col 67}= {res}    0.4047
+{col 1}Linear regression, absorbing indicators{col 53}{lalign 17:Number of obs}{col 70} = {res}{ralign 6:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 53}{lalign 17:No. of categories}{col 70} = {res}{ralign 6:14}
+{txt}{col 53}{lalign 17:F({res:9}, {res:38})}{col 70} = {res}{ralign 6:3.95}
+{txt}{col 53}{lalign 17:Prob > F}{col 70} = {res}{ralign 6:0.0013}
+{txt}{col 53}{lalign 17:R-squared}{col 70} = {res}{ralign 6:0.0744}
+{txt}{col 53}{lalign 17:Adj R-squared}{col 70} = {res}{ralign 6:0.0330}
+{txt}{col 53}{lalign 17:Root MSE}{col 70} = {res}{ralign 6:0.4047}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}askloaninp_s~14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}askloaninp_s~14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-.0916449{col 29}{space 2} .0499361{col 40}{space 1}   -1.84{col 49}{space 3}0.074{col 57}{space 4}-.1927353{col 70}{space 3} .0094455
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-.1421189{col 29}{space 2} .0507533{col 40}{space 1}   -2.80{col 49}{space 3}0.008{col 57}{space 4}-.2448636{col 70}{space 3}-.0393742
@@ -1354,7 +1354,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .1868115{col 29}{space 2} .0697161{col 40}{space 1}    2.68{col 49}{space 3}0.011{col 57}{space 4} .0456787{col 70}{space 3} .3279444
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 askloan~a_14 {c |}{res}        275    .2581818    .4384324          0          1
 
@@ -1384,18 +1384,18 @@ askloan~a_14 {c |}{res}        275    .2581818    .4384324          0          1
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      9.59
-{txt}{col 49}Prob > F{col 67}= {res}    0.0000
-{txt}{col 49}R-squared{col 67}= {res}    0.0992
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0589
-{txt}{col 49}Root MSE{col 67}= {res}    0.3553
+{col 1}Linear regression, absorbing indicators{col 53}{lalign 17:Number of obs}{col 70} = {res}{ralign 6:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 53}{lalign 17:No. of categories}{col 70} = {res}{ralign 6:14}
+{txt}{col 53}{lalign 17:F({res:9}, {res:38})}{col 70} = {res}{ralign 6:9.59}
+{txt}{col 53}{lalign 17:Prob > F}{col 70} = {res}{ralign 6:0.0000}
+{txt}{col 53}{lalign 17:R-squared}{col 70} = {res}{ralign 6:0.0992}
+{txt}{col 53}{lalign 17:Adj R-squared}{col 70} = {res}{ralign 6:0.0589}
+{txt}{col 53}{lalign 17:Root MSE}{col 70} = {res}{ralign 6:0.3553}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}askloaninp_s~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}askloaninp_s~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-.0464842{col 29}{space 2} .0325843{col 40}{space 1}   -1.43{col 49}{space 3}0.162{col 57}{space 4}-.1124476{col 70}{space 3} .0194792
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2}-.0634944{col 29}{space 2} .0317482{col 40}{space 1}   -2.00{col 49}{space 3}0.053{col 57}{space 4}-.1277652{col 70}{space 3} .0007764
@@ -1409,7 +1409,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} .0596343{col 29}{space 2} .0390645{col 40}{space 1}    1.53{col 49}{space 3}0.135{col 57}{space 4}-.0194476{col 70}{space 3} .1387162
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 askloan~a_15 {c |}{res}        275    .2036364    .4034358          0          1
 
@@ -1440,18 +1440,18 @@ added macro:
                  e(yr) : "{res:2015}"
 
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      3.48
-{txt}{col 49}Prob > F{col 67}= {res}    0.0032
-{txt}{col 49}R-squared{col 67}= {res}    0.0528
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0104
-{txt}{col 49}Root MSE{col 67}= {res}   94.5619
+{col 1}Linear regression, absorbing indicators{col 52}{lalign 17:Number of obs}{col 69} = {res}{ralign 7:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 52}{lalign 17:No. of categories}{col 69} = {res}{ralign 7:14}
+{txt}{col 52}{lalign 17:F({res:9}, {res:38})}{col 69} = {res}{ralign 7:3.48}
+{txt}{col 52}{lalign 17:Prob > F}{col 69} = {res}{ralign 7:0.0032}
+{txt}{col 52}{lalign 17:R-squared}{col 69} = {res}{ralign 7:0.0528}
+{txt}{col 52}{lalign 17:Adj R-squared}{col 69} = {res}{ralign 7:0.0104}
+{txt}{col 52}{lalign 17:Root MSE}{col 69} = {res}{ralign 7:94.5619}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}obtloanamt_s~14{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}obtloanamt_s~14{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2}-33.76729{col 29}{space 2} 12.46026{col 40}{space 1}   -2.71{col 49}{space 3}0.010{col 57}{space 4}-58.99178{col 70}{space 3}-8.542805
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2} -24.2439{col 29}{space 2} 15.40818{col 40}{space 1}   -1.57{col 49}{space 3}0.124{col 57}{space 4}-55.43612{col 70}{space 3} 6.948327
@@ -1465,7 +1465,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2}  42.4966{col 29}{space 2} 19.47652{col 40}{space 1}    2.18{col 49}{space 3}0.035{col 57}{space 4}  3.06845{col 70}{space 3} 81.92476
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 obtloan~a_14 {c |}{res}        275      48.734    105.1666          0        495
 
@@ -1495,18 +1495,18 @@ obtloan~a_14 {c |}{res}        275      48.734    105.1666          0        495
 added macro:
                  e(yr) : "{res:2014}"
 
-Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}       515
-{txt}Absorbed variable: {bf:group2_bsl}{col 49}No. of categories{col 67}= {res}        14
-{txt}{col 49}F({res}   9{txt},{res}     38{txt}){col 67}= {res}      3.22
-{txt}{col 49}Prob > F{col 67}= {res}    0.0054
-{txt}{col 49}R-squared{col 67}= {res}    0.0431
-{txt}{col 49}Adj R-squared{col 67}= {res}    0.0003
-{txt}{col 49}Root MSE{col 67}= {res}   92.3002
+{col 1}Linear regression, absorbing indicators{col 52}{lalign 17:Number of obs}{col 69} = {res}{ralign 7:515}
+{txt}{col 1}Absorbed variable: {res:group2_bsl}{col 52}{lalign 17:No. of categories}{col 69} = {res}{ralign 7:14}
+{txt}{col 52}{lalign 17:F({res:9}, {res:38})}{col 69} = {res}{ralign 7:3.22}
+{txt}{col 52}{lalign 17:Prob > F}{col 69} = {res}{ralign 7:0.0054}
+{txt}{col 52}{lalign 17:R-squared}{col 69} = {res}{ralign 7:0.0431}
+{txt}{col 52}{lalign 17:Adj R-squared}{col 69} = {res}{ralign 7:0.0003}
+{txt}{col 52}{lalign 17:Root MSE}{col 69} = {res}{ralign 7:92.3002}
 
-{txt}{ralign 81:(Std. Err. adjusted for {res:39} clusters in habitation_old_bsl)}
+{txt}{ralign 81:(Std. err. adjusted for {res:39} clusters in {res:habitation_old_bsl})}
 {hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {col 17}{c |}{col 29}    Robust
-{col 1}obtloanamt_s~15{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{col 1}obtloanamt_s~15{col 17}{c |} Coefficient{col 29}  std. err.{col 41}      t{col 49}   P>|t|{col 57}     [95% con{col 70}f. interval]
 {hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {space 6}treat_inf {c |}{col 17}{res}{space 2} 2.848934{col 29}{space 2} 11.10147{col 40}{space 1}    0.26{col 49}{space 3}0.799{col 57}{space 4}-19.62482{col 70}{space 3} 25.32269
 {txt}{space 3}treat_no_inf {c |}{col 17}{res}{space 2} 6.587937{col 29}{space 2} 11.04495{col 40}{space 1}    0.60{col 49}{space 3}0.554{col 57}{space 4} -15.7714{col 70}{space 3} 28.94728
@@ -1520,7 +1520,7 @@ Linear regression, absorbing indicators{col 49}Number of obs{col 67}= {res}     
 {txt}{space 10}_cons {c |}{col 17}{res}{space 2} 7.272773{col 29}{space 2} 9.196653{col 40}{space 1}    0.79{col 49}{space 3}0.434{col 57}{space 4}-11.34488{col 70}{space 3} 25.89042
 {txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 
-    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
 {hline 13}{c +}{hline 57}
 obtloan~a_15 {c |}{res}        275      36.368    88.72063          0        550
 
@@ -1560,8 +1560,7 @@ added macro:
 >                         keep(treat_inf treat_no_inf control_inf) ///
 >                         indicate("Lagoons and randomization strata FE=h_d_suplag1_bsl") ///
 >                         numbers(( )) stats(bsl_outcome p_trt p_X2 m_ctr N, fmt(%9.3f %9.3f %9.3f %9.3f %9.0f) labels("Baseline outcome" "p-val trt informed=trt uninformed" "p-val trt informed=trt uninformed=ctr informed" "Uninformed control mean"  "Observations")) replace
-{res}{txt}(note: file ./results/T_impacts_info_expect_benefPTTA_15.tex not found)
-(output written to {browse  `"./results/T_impacts_info_expect_benefPTTA_15.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/T_impacts_info_expect_benefPTTA_15.tex"'})
 
 {com}. 
 . *Table 6 yields & profit
@@ -1570,8 +1569,7 @@ added macro:
 >                         mgroups(none) mlabels(none) collabels(none) eqlabels(none) style(tex) ///
 >                         keep(treat_inf treat_no_inf control_inf) varlabels(treat_inf Treatmentxinformed treat_no_inf Treatmentxuninformed control_inf Controlxinformed) ///
 >                         numbers(( )) stats(p_trt p_X2 m_ctr bsl_outcome N, fmt(%9.3f %9.3f %9.3f %9.3f %9.0f) labels("p-val trt informed=trt uninformed" "p-val trt informed=trt uninformed=ctr informed" "Uninformed control mean" "Baseline outcome"  "Observations")) replace
-{res}{txt}(note: file ./results/T_impacts_info_yields_profit_15f.tex not found)
-(output written to {browse  `"./results/T_impacts_info_yields_profit_15f.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/T_impacts_info_yields_profit_15f.tex"'})
 
 {com}. 
 . *Table 7 inputs
@@ -1580,8 +1578,7 @@ added macro:
 >                         mgroups(none) mlabels(none) collabels(none) eqlabels(none) style(tex) varlabels(treat_inf Treatment*informed treat_no_inf Treatment*uninformed control_inf Control*informed) ///
 >                         keep(treat_inf treat_no_inf control_inf) ///
 >                         numbers(( )) stats(p_trt p_X2 m_ctr bsl_outcome N, fmt(%9.3f %9.3f %9.1f %9.3f %9.0f) labels("p-val trt informed=trt uninformed" "p-val trt informed=trt uninformed=ctr informed" "Uninformed control mean" "Baseline outcome"  "Observations")) replace
-{res}{txt}(note: file ./results/T_impacts_info_inputs_15f.tex not found)
-(output written to {browse  `"./results/T_impacts_info_inputs_15f.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/T_impacts_info_inputs_15f.tex"'})
 
 {com}. 
 . *Table 10 finance
@@ -1590,17 +1587,16 @@ added macro:
 >                         mgroups(none) mlabels(none) collabels(none) eqlabels(none) style(tex) varlabels(treat_inf Treatment*informed treat_no_inf Treatment*uninformed control_inf Control*informed) ///
 >                         keep(treat_inf treat_no_inf control_inf) ///
 >                         numbers(( )) stats(p_trt p_X2 m_ctr bsl_outcome N, fmt(%9.3f %9.3f %9.3f %9.3f %9.0f) labels("p-val trt informed=trt uninformed" "p-val trt informed=trt uninformed=ctr informed" "Uninformed control mean" "Baseline outcome"  "Observations")) replace
-{res}{txt}(note: file ./results/T_impacts_info_finance_15.tex not found)
-(output written to {browse  `"./results/T_impacts_info_finance_15.tex"'})
+{res}{txt}(output written to {browse  `"D:\ptta_haiti\replication/results/T_impacts_info_finance_15.tex"'})
 
 {com}. 
 . 
 . 
 . log close
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}/home/j.gignoux/U/Travail/GMSW/analysis/replication/log/estimates main and information treatment effects.smcl
+       {txt}log:  {res}D:\ptta_haiti\replication\log/estimates main and information treatment effects.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}17 Jan 2022, 12:23:47
+ {txt}closed on:  {res}16 Jun 2022, 17:39:45
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
