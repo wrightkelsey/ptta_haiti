@@ -83,7 +83,7 @@ In what follows, we explain the steps required to use the attached files:
 2) 	Change the file path at the beginning of each  do-file 
 	- The do-files generate log-files that are saved in a folder "log"
 	- The do-files generate tex files that are saved in a folder "results"
-3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC 
+3) 	Make sure have distinct, estout, psdlasso, (lasspak), and ritest from SSC 
 4) 	Run one of the 6 do files 
 5) 	Output from the log files references the table in the paper
 	Output in the tex files should be viewed using Latex 
