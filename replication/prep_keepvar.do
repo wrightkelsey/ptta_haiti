@@ -39,6 +39,7 @@ ELCSA_adult_cat_*
 ELCSA_full_*
 ELCSA_full_cat_*
 energy_*
+F_rp_allchem_spending_uc_*
 femalehead_*
 fert_DomRep_*
 fert_loan_*
@@ -260,6 +261,29 @@ wall_*
 WDDS_*
 WDDS_cat_*
 workgroup_*
+
+trt_info
+
+F_harv_any_hh_*
+
+F_profit_2_uc_*
+F_rp_labor_spendingEX_uc_*
+F_rp_pest_spending_uc_*
+
+F_t_plotRiceYield5_1_uc_*
+F_t_prod_value5_uc_*
+F_t_sale_value_uc_*
+rp_allchem_tot120150_*
+
+profit_2_uc_*
+DR_fem_work_days_HH_*
+
+t_plotRiceYield5_1_uc_*
+ F_rp_qty_allchem_uc_*
+ F_rp_qty_urea_uc_* 
+ F_rp_qty_npk_uc_*
+ F_rp_qty_sulfate_uc_*
+ rp_allchem_tot120150_*
 ;
 
 
@@ -268,28 +292,24 @@ workgroup_*
 
 save panel_dataset_for_replication, replace 
 
-stop 
- 
 
+ 
+ /*** other 
+ 
 informed
-F_harv_any_hh_*
 F_profit_2_c_*
-F_profit_2_uc_*
-F_rp_allchem_spending_uc_*
-F_rp_labor_spendingEX_uc_*
-F_rp_pest_spending_uc_*
 F_t_plotRiceYield5_1_c*
-F_t_plotRiceYield5_1_uc_*
-F_t_prod_value5_uc_*
-F_t_sale_value_uc_*
+
 km_to_highway
 profit_2_c_*
-profit_2_uc
 profit_vouch_2_c_*
 rp_chempest_spending_uc_*
+
 rp_chfert_pest_uc_*
+
 rp_chfert_uc_*
+
 t_plotRiceYield5_1_c*
-t_plotRiceYield5_1_uc
 treat_inf
 treat_no_inf
+

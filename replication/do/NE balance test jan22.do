@@ -34,7 +34,7 @@ if c(username) == "wrigh" {
 	
 	/* info on location of input suppliers */
 	
-	drop _merge
+	*drop _merge
 	merge n:1 nsm using "$notreleased/distances from households.dta"
 	drop _merge
 	g d_town=min(d_FL, d_Ferrier, d_Ouanaminthe)
@@ -91,7 +91,7 @@ if c(username) == "wrigh" {
 	
 
 *** 3. Rice cultivation 
-		
+	rename fstMonth_bsl fstMonth13_bsl
 	local landuse_rice ///
 	d_growrice_bsl n_riceplot_uc_bsl t_plot_area_uc_bsl /// 
 	n_instXplot1_uc_bsl harv_any_hh_bsl  harv_notyet_hh_bsl harv_partial_hh_bsl harv_lost_hh_bsl hh_loss_pest_uc_bsl ///
@@ -107,7 +107,7 @@ if c(username) == "wrigh" {
 	label variable harv_partial_hh_bsl "Has at least one harvest in progress" 
 	label variable harv_lost_hh_bsl "Lost at least one harvest" 
 	label variable hh_loss_pest_uc_bsl "Lost part of harvest due to pests" 
-	*label variable fstMonth13_bsl "First month planted in 2013" 
+	label variable fstMonth13_bsl "First month planted in 2013" 
 
 	local landuse_rice_sel ///
 	d_growrice_bsl n_riceplot_uc_bsl t_plot_area_uc_bsl harv_any_hh_bsl harv_lost_hh_bsl fstMonth13_bsl
