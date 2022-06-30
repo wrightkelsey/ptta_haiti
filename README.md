@@ -7,8 +7,7 @@ Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright
 
 1. Overview
 
-This archive contains all Stata do files and datasets required to replicate estimations reported in tables 1-10, 
-and Appendix tables A1-A24. Estimation results are output in tex. 
+This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
 Stata version 14 or later. Requires Stata commands available from SSC : estout, pdslasso, ritest 
 
