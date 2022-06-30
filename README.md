@@ -1,6 +1,9 @@
 # ptta_haiti 
 
 Reference: "Input Subsidies, credit constraints and expectations of future transfers: evidence from Haiti"
+
+
+American Journal of Agricultural Economics 
 Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright 
 
 
@@ -9,16 +12,39 @@ Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright
 
 This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
-Stata version 14 or later. Requires Stata commands available from SSC : estout, pdslasso, ritest 
+
+
+
 
 There are 6 do files and 1 dataset in .dta format. 
+
+Questionnaires and manuals, and supporting document are in folder doc. 
+
+Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest. Versions used in replication in /ado. 
+
+			which pdslasso
+			*! pdslasso 1.0.03 04sept2018
+			*! pdslasso package 1.1 15jan2019
+			*! authors aa/cbh/ms
+
+			which distinct
+			*! 1.2.1 NJC 1 March 2012         
+			*! 1.2.0 NJC 15 September 2008
+
+			. which ritest
+			*! version 1.1.7 feb2020.
+
+
+			which estout
+			*! version 3.24  30apr2021  Ben Jann
+
 
 
 2. Data availability and provenance statement
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
-The data is made available through The World Bank MicroData Repository. 
+The replication data is here on Github, and made available through The World Bank MicroData Repository (starting in July 2022). 
 
 3. Statement about rights
 
@@ -27,7 +53,7 @@ I certify that the author(s) of the manuscript have legitimate access to and per
 
 4. Summary of Availability
 
-Some data cannot be made publicly available - see below for details. 
+Some household location data cannot be made publicly available - see below for details. 
 
 
 5. Details on data source and dataset
@@ -38,12 +64,12 @@ Variables from baseline in 2013 end in *bsl
 Variables from the short survey collected with the information intervention with reference to November 2014, end in *nov14 
 Variables from follow-up 1 with reference year 2014, end in *14 
 Variables from follow-up 2 with reference year 2015, end in *15 
-Variables starting in F* refer to the first season. 
+Variables starting in F* refer to the first rice season. 
 
 Analysis variables are labelled.
 
 	Data file				Source					Notes											Provided
- 	*********************************************************************************************************************************************************************************
+ 	****************************************************************************************************************************************************************************
 
 	panel_dataset_for_replication.dta	Baseline and three follow-up surveys	Combines multiple data sources, constructed variables, serves as input for all programs	Yes
 
@@ -70,7 +96,7 @@ The list below indicates input data and ouput tables for the provided programs.
 	NE_impact_analysis  - baseline characteristics Jan22 		panel_dataset_for_replication.dta 					1	
 	NE_impact_analysis - random inference jan22			panel_dataset_for_replication.dta					3-5,9, A2-A6,A13,A15-A18	
 	NE_impact_analysis - information treatment jan22		panel_dataset_for_replication.dta					6-7,10	
-	NE balance test - jan22						panel_dataset_for_replication.dta, distances from households.dta*	A1	6 tables for sets of vars
+	NE balance test - jan22						panel_dataset_for_replication.dta, distances from households.dta*	A1, 6 tables var sets
 	NE_impact_analysis - random inference interactions jan22	panel_dataset_for_replication.dta					A7-A12, A14	
 	NE_impact_analysis - pdslasso jan22				panel_dataset_for_replication.dta					A19-A24	
 
@@ -79,17 +105,17 @@ The list below indicates input data and ouput tables for the provided programs.
 
 In what follows, we explain the steps required to use the attached files:
 
-1) 	Folders in the working directory are: do, data, results, and log. 
-2) 	Change the file path at the beginning of each  do-file 
+1) 	Folders in the working directory are: do, data, results, doc, and log. 
+2) 	Change the file paths at the beginning of each  do-file 
 	- The do-files generate log-files that are saved in a folder "log"
 	- The do-files generate tex files that are saved in a folder "results"
-3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC 
+3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC. The last versions checked for compatibility are in ado.  
 4) 	Run one of the 6 do files 
 5) 	Output from the log files references the table in the paper
 	Output in the tex files should be viewed using Latex 
 
 
-8. references
+8. References
 
 Belloni, A., Chernozhukov, V. & Hansen, C. (2014), ‘Inference on Treatment Effects after Selection among High-Dimensional ControlsˆaC’, Review of Economic Studies 81(2), 608–650.
 
