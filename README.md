@@ -20,7 +20,7 @@ There are 6 do files and 1 dataset in .dta format.
 
 Questionnaires and manuals, and supporting document are in folder doc. 
 
-Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest. Used versions in /ado. 
+Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest. Versions used in replication in /ado. 
 
 			which pdslasso
 			*! pdslasso 1.0.03 04sept2018
