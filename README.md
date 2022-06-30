@@ -2,9 +2,11 @@
 
 **Reference: "Input Subsidies, credit constraints and expectations of future transfers: evidence from Haiti"**
 
-
 American Journal of Agricultural Economics 
 Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright 
+
+
+
 
 
 
@@ -12,11 +14,10 @@ Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright
 
 This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
+Questionnaires and manuals, and supporting document are in folder doc. 
 
 
 There are 6 do files and 1 dataset in .dta format. 
-
-Questionnaires and manuals, and supporting document are in folder doc. 
 
 Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest. Last versions tested for replication are copied in /ado. 
 
@@ -69,6 +70,7 @@ Some household location data cannot be made publicly available - see below for d
 
 
 **5. Details on data source and dataset**
+
 'panel_dataset_for_replication.dta' is a Stata dataset containing constructed variables from 4 rounds of survey data as described in section 4.2 of the paper; datasets are de-identified.
 
 Variables from baseline in 2013 end in *bsl 
