@@ -6,6 +6,35 @@ American Journal of Agricultural Economics
 Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright 
 
 
+All data, documentation, code, and instructions for replication are available publicly on Github. 
+See the README on Github for full instructions for replicators at  https://github.com/wrightkelsey/ptta_haiti/
+
+The replication data and metadata are also available beginning July 2022, through The World Bank MicroData Repository (https://microdata.worldbank.org) 
+as "Haiti Project for Technology Transfer to Farmers (PTTA) 2013-2015."
+
+OUTLINE: 
+
+1. Overview
+2. Data availability and provenance statement
+3. Statement about rights
+4. Summary of availability
+5. Details on data source and dataset
+6. Description and list of programs 
+7. Instructions to replicators 
+8. References 
+
+
+Folders include:
+replication/ 
+		/ado
+		/data
+		/do
+		/doc
+		/log
+		/results 
+
+
+
 
 
 
