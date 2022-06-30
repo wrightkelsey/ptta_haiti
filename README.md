@@ -43,7 +43,7 @@ Stata version 14 or later. Requires Stata commands available from SSC : distinct
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
-The replication data is here on Github, and starting in July 2022, through The World Bank MicroData Repository.
+The replication data is here on Github, and starting in July 2022, through The World Bank MicroData Repository (https://microdata.worldbank.org) as "Haiti Project for Technology Transfer to Farmers (PTTA) 2013-2015."
 
 **3. Statement about rights**
 
