@@ -1,6 +1,7 @@
 # ptta_haiti 
 
 Reference: "Input Subsidies, credit constraints and expectations of future transfers: evidence from Haiti"
+American Journal of Agricultural Economics 
 Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright 
 
 
@@ -9,7 +10,7 @@ Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright
 
 This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
-Stata version 14 or later. Requires Stata commands available from SSC : estout, pdslasso, ritest 
+Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest 
 
 There are 6 do files and 1 dataset in .dta format. 
 
@@ -18,7 +19,7 @@ There are 6 do files and 1 dataset in .dta format.
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
-The data is made available through The World Bank MicroData Repository. 
+The data is made available through The World Bank MicroData Repository and here on Github. 
 
 3. Statement about rights
 
@@ -38,12 +39,12 @@ Variables from baseline in 2013 end in *bsl
 Variables from the short survey collected with the information intervention with reference to November 2014, end in *nov14 
 Variables from follow-up 1 with reference year 2014, end in *14 
 Variables from follow-up 2 with reference year 2015, end in *15 
-Variables starting in F* refer to the first season. 
+Variables starting in F* refer to the first rice season. 
 
 Analysis variables are labelled.
 
 	Data file				Source					Notes											Provided
- 	*********************************************************************************************************************************************************************************
+ 	****************************************************************************************************************************************************************************
 
 	panel_dataset_for_replication.dta	Baseline and three follow-up surveys	Combines multiple data sources, constructed variables, serves as input for all programs	Yes
 
@@ -89,7 +90,7 @@ In what follows, we explain the steps required to use the attached files:
 	Output in the tex files should be viewed using Latex 
 
 
-8. references
+8. References
 
 Belloni, A., Chernozhukov, V. & Hansen, C. (2014), ‘Inference on Treatment Effects after Selection among High-Dimensional ControlsˆaC’, Review of Economic Studies 81(2), 608–650.
 
