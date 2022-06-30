@@ -14,8 +14,6 @@ This archive contains all Stata do files required to replicate estimations repor
 
 
 
-
-
 There are 6 do files and 1 dataset in .dta format. 
 
 Questionnaires and manuals, and supporting document are in folder doc. 
@@ -39,24 +37,38 @@ Stata version 14 or later. Requires Stata commands available from SSC : distinct
 			*! version 3.24  30apr2021  Ben Jann
 
 
+
+
+
+
 **2. Data availability and provenance statement**
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
 The replication data is here on Github, and starting in July 2022, through The World Bank MicroData Repository (https://microdata.worldbank.org) as "Haiti Project for Technology Transfer to Farmers (PTTA) 2013-2015."
 
+
+
+
+
+
 **3. Statement about rights**
 
 I certify that the author(s) of the manuscript have legitimate access to and permission to use the data used in this manuscript.
+
+
+
+
 
 
 **4. Summary of Availability**
 
 Some household location data cannot be made publicly available - see below for details. 
 
-**
-5. Details on data source and dataset
-**
+
+
+
+**5. Details on data source and dataset**
 'panel_dataset_for_replication.dta' is a Stata dataset containing constructed variables from 4 rounds of survey data as described in section 4.2 of the paper; datasets are de-identified.
 
 Variables from baseline in 2013 end in *bsl 
@@ -74,6 +86,9 @@ Analysis variables are labelled.
 
 ** "Distances from households.dta" are author's calculations based on GPS coordinates collected during survey data, and 
 are not included in the data release due to personal identifying information (PII). This data is required in NE balance test - jan22.
+
+
+
 
 
 **6. Description and list of programs**
@@ -100,6 +115,8 @@ The list below indicates input data and ouput tables for the provided programs.
 	NE_impact_analysis - pdslasso jan22				panel_dataset_for_replication.dta					A19-A24	
 
 
+
+
 **7. Instructions to replicators**
 
 In what follows, we explain the steps required to use the attached files:
@@ -114,6 +131,8 @@ In what follows, we explain the steps required to use the attached files:
 	Output in the tex files should be viewed using Latex 
 
 
+
+
 **8. References**
 
 Belloni, A., Chernozhukov, V. & Hansen, C. (2014), ‘Inference on Treatment Effects after Selection among High-Dimensional ControlsˆaC’, Review of Economic Studies 81(2), 608–650.
@@ -121,6 +140,8 @@ Belloni, A., Chernozhukov, V. & Hansen, C. (2014), ‘Inference on Treatment Eff
 Gignoux, J., Macours, K., Stein, D. and Wright, K. (2022), "Inputs subsidies, credit constraints and expectations of future transfers: evidence from Haïti", conditionnally accepted at the American Journal of Agricultural Economics
 
 Young, A. (2018), ‘Channeling Fisher: Randomization Tests and the Statistical Insignificance of Seemingly Significant Experimental Results*’, The Quarterly Journal of Economics 134(2), 557–598.
+
+
 
 
 **9. Acknowledgements**
