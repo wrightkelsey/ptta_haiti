@@ -19,8 +19,7 @@ There are 6 do files and 1 dataset in .dta format.
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
-The data is made available through The World Bank repository 'research reproducibility resources for individual projects' at https://github.com/worldbank, toghether with the concept note for the experimental study (to be read with, and updated in the paper), survey questionnaires and enumerator manuals.
-
+The data is made available through The World Bank MicroData Repository. 
 
 3. Statement about rights
 
