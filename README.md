@@ -10,11 +10,32 @@ Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright
 
 This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
-Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest 
+
+
+
 
 There are 6 do files and 1 dataset in .dta format. 
 
 Questionnaires and manuals, and supporting document are in folder doc. 
+
+Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest. Used versions in /ado. 
+
+			which pdslasso
+			*! pdslasso 1.0.03 04sept2018
+			*! pdslasso package 1.1 15jan2019
+			*! authors aa/cbh/ms
+
+			which distinct
+			*! 1.2.1 NJC 1 March 2012         
+			*! 1.2.0 NJC 15 September 2008
+
+			. which ritest
+			*! version 1.1.7 feb2020.
+
+
+			which estout
+			*! version 3.24  30apr2021  Ben Jann
+
 
 
 2. Data availability and provenance statement
