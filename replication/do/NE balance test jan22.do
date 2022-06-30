@@ -35,7 +35,7 @@ if c(username) == "wrigh" {
 	/* info on location of input suppliers */
 	
 	*drop _merge
-	merge n:1 nsm using "$notreleased/distances from households.dta"
+	merge n:1 nsm using "$notreleased/distances from households.dta" /// note, this file cannot be made public due to PII. Comment out if necessary. 
 	drop _merge
 	g d_town=min(d_FL, d_Ferrier, d_Ouanaminthe)
 	 
