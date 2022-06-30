@@ -121,13 +121,12 @@ The list below indicates input data and ouput tables for the provided programs.
 
 **7. Instructions to replicators**
 
-In what follows, we explain the steps required to use the attached files:
 
-1) 	Folders in the working directory are: do, data, results, doc, and log. 
+1) 	Folders in the working directory are: do, data, results, doc, ado, and log. 
 2) 	Change the file paths at the beginning of each  do-file 
 	- The do-files generate log-files that are saved in a folder "log"
 	- The do-files generate tex files that are saved in a folder "results"
-3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC. The version used in the paper are copied in ado.  
+3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC. The version used in the paper are copied in /ado.  
 4) 	Run one of the 6 do files 
 5) 	Output from the log files references the table in the paper
 	Output in the tex files should be viewed using Latex 
