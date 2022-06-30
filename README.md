@@ -1,15 +1,15 @@
 # ptta_haiti 
 
-Reference: "Input Subsidies, credit constraints and expectations of future transfers: evidence from Haiti"
+**Reference: "Input Subsidies, credit constraints and expectations of future transfers: evidence from Haiti"
 
 
 American Journal of Agricultural Economics 
 Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright 
+**
 
 
-
-1. Overview
-
+**1. Overview
+**
 This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
 
@@ -39,25 +39,25 @@ Stata version 14 or later. Requires Stata commands available from SSC : distinct
 			*! version 3.24  30apr2021  Ben Jann
 
 
-
-2. Data availability and provenance statement
+**
+2. Data availability and provenance statement**
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
 The replication data is here on Github, and starting in July 2022, through The World Bank MicroData Repository.
-
-3. Statement about rights
+**
+3. Statement about rights**
 
 I certify that the author(s) of the manuscript have legitimate access to and permission to use the data used in this manuscript.
 
 
-4. Summary of Availability
+**4. Summary of Availability**
 
 Some household location data cannot be made publicly available - see below for details. 
 
-
+**
 5. Details on data source and dataset
-
+**
 'panel_dataset_for_replication.dta' is a Stata dataset containing constructed variables from 4 rounds of survey data as described in section 4.2 of the paper; datasets are de-identified.
 
 Variables from baseline in 2013 end in *bsl 
@@ -77,7 +77,7 @@ Analysis variables are labelled.
 are not included in the data release due to personal identifying information (PII). This data is required in NE balance test - jan22.
 
 
-6. Description and list of programs
+**6. Description and list of programs**
 	
 The 6 provided programs reproduces all tables and figures in the paper (except Table 2 which provides a summary of the program implementation).
 
@@ -101,7 +101,7 @@ The list below indicates input data and ouput tables for the provided programs.
 	NE_impact_analysis - pdslasso jan22				panel_dataset_for_replication.dta					A19-A24	
 
 
-7. Instructions to replicators
+**7. Instructions to replicators**
 
 In what follows, we explain the steps required to use the attached files:
 
@@ -109,7 +109,7 @@ In what follows, we explain the steps required to use the attached files:
 2) 	Change the file paths at the beginning of each  do-file 
 	- The do-files generate log-files that are saved in a folder "log"
 	- The do-files generate tex files that are saved in a folder "results"
-3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC. The last versions checked for compatibility are in ado.  
+3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC. The version used in the paper are copied in ado.  
 4) 	Run one of the 6 do files 
 5) 	Output from the log files references the table in the paper
 	Output in the tex files should be viewed using Latex 
