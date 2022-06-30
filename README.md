@@ -1,15 +1,15 @@
 # ptta_haiti 
 
-**Reference: "Input Subsidies, credit constraints and expectations of future transfers: evidence from Haiti"
+**Reference: "Input Subsidies, credit constraints and expectations of future transfers: evidence from Haiti"**
 
 
 American Journal of Agricultural Economics 
 Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright 
-**
 
 
-**1. Overview
-**
+
+**1. Overview**
+
 This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
 
