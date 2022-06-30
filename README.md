@@ -39,14 +39,13 @@ Stata version 14 or later. Requires Stata commands available from SSC : distinct
 			*! version 3.24  30apr2021  Ben Jann
 
 
-**
-2. Data availability and provenance statement**
+**2. Data availability and provenance statement**
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
 The replication data is here on Github, and starting in July 2022, through The World Bank MicroData Repository.
-**
-3. Statement about rights**
+
+**3. Statement about rights**
 
 I certify that the author(s) of the manuscript have legitimate access to and permission to use the data used in this manuscript.
 
@@ -115,7 +114,7 @@ In what follows, we explain the steps required to use the attached files:
 	Output in the tex files should be viewed using Latex 
 
 
-8. References
+**8. References**
 
 Belloni, A., Chernozhukov, V. & Hansen, C. (2014), ‘Inference on Treatment Effects after Selection among High-Dimensional ControlsˆaC’, Review of Economic Studies 81(2), 608–650.
 
@@ -124,7 +123,7 @@ Gignoux, J., Macours, K., Stein, D. and Wright, K. (2022), "Inputs subsidies, cr
 Young, A. (2018), ‘Channeling Fisher: Randomization Tests and the Statistical Insignificance of Seemingly Significant Experimental Results*’, The Quarterly Journal of Economics 134(2), 557–598.
 
 
-9. Acknowledgements
+**9. Acknowledgements**
 
 This research project is based on a collaboration between MARNDR (the Ministère de l’Agriculture, des Ressources Naturelles et du Développement Rural in Haiti),  the Inter-American Development Bank (IADB), Development Impact Evaluation (DIME) - World Bank, and PSE.  We are grateful to Hermann Augustin, Jean Marie Robert Chéry and the staff at the MARNDR. Sébastien Gachot was instrumental in setting up the experiment and baseline data collection and we are grateful to him, Gilles Damais, Bruno Jacquet and IDB-Port-au-Prince team for their dedication to the project.  We are also grateful to Diana Lopez-Avila, Hamza Benhhadou and Paul Dutronc-Postel for field coordination and to Nitin Bharti, Michell Dong and Tom Wright for supporting the analysis. At DIME, we are indebted to Florence Kondylis for support throughout the project, and to Kristoffer Bjarkefur, Maria Ruth Jones and Cindy Sobieski for sharing their expertise in data collection. Herard Jean Pierre Osias and Marckendy Petit-Louis were superb survey leads. We thank the agronomy students of the Université d'État d'Haïti, Limonade Campus along with all surveyors. We are appreciative of inputs and comments at various parts of the study from Jean Dieugo Barthelus, Paul Christian, Bertrand Dayot, Estimable Frantz, Jery Rambao, Josias Toussaint and Collins Zamor, among others. The paper benefited from discussions with Tanguy Bernard, Andrew Foster, Markus Goldstein, Alain de Janvry, Jeremy Magruder, Paul Winters and participants at a DIME workshop, EUDN conference, FAO, LACEA conference, and seminars at PSE, and from comments by the editor and 3 anonymous referees. We thank the rice growing residents of Bas and Haut Maribahoux for graciously sharing their experiences with the researchers. We gratefully acknowledge support and funding from GAFSP, IADB, and the Agence Nationale de la Recherche under grant ANR-17-EURE-001.
 
