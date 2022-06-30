@@ -20,7 +20,7 @@ There are 6 do files and 1 dataset in .dta format.
 
 Questionnaires and manuals, and supporting document are in folder doc. 
 
-Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest. Versions used in replication in /ado. 
+Stata version 14 or later. Requires Stata commands available from SSC : distinct, estout, pdslasso, ritest. Last versions tested for replication are copied in /ado. 
 
 			which pdslasso
 			*! pdslasso 1.0.03 04sept2018
@@ -44,7 +44,7 @@ Stata version 14 or later. Requires Stata commands available from SSC : distinct
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
-The replication data is here on Github, and made available through The World Bank MicroData Repository (starting in July 2022). 
+The replication data is here on Github, and starting in July 2022, through The World Bank MicroData Repository.
 
 3. Statement about rights
 
