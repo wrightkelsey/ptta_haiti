@@ -7,8 +7,7 @@ Authors: Jérémie Gignoux, Karen Macours, Daniel Stein, Kelsey A. Wright
 
 1. Overview
 
-This archive contains all Stata do files and datasets required to replicate estimations reported in tables 1-10, 
-and Appendix tables A1-A24. Estimation results are output in tex. 
+This archive contains all Stata do files required to replicate estimations reported in tables 1-10, and Appendix tables A1-A24. Estimation results are output in tex. 
 
 Stata version 14 or later. Requires Stata commands available from SSC : estout, pdslasso, ritest 
 
@@ -19,8 +18,7 @@ There are 6 do files and 1 dataset in .dta format.
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
-The data is made available through The World Bank repository 'research reproducibility resources for individual projects' at https://github.com/worldbank, toghether with the concept note for the experimental study (to be read with, and updated in the paper), survey questionnaires and enumerator manuals.
-
+The data is made available through The World Bank MicroData Repository. 
 
 3. Statement about rights
 
@@ -29,7 +27,7 @@ I certify that the author(s) of the manuscript have legitimate access to and per
 
 4. Summary of Availability
 
-Some data cannot be made publicly available.
+Some data cannot be made publicly available - see below for details. 
 
 
 5. Details on data source and dataset
