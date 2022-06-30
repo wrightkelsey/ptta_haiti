@@ -27,7 +27,7 @@ I certify that the author(s) of the manuscript have legitimate access to and per
 
 4. Summary of Availability
 
-Some data cannot be made publicly available.
+Some data cannot be made publicly available - see below for details. 
 
 
 5. Details on data source and dataset
