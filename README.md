@@ -14,12 +14,14 @@ Stata version 14 or later. Requires Stata commands available from SSC : distinct
 
 There are 6 do files and 1 dataset in .dta format. 
 
+Questionnaires and manuals, and supporting document are in folder doc. 
+
 
 2. Data availability and provenance statement
 
 The data was collected during the experimental impact study described in the paper (Gignoux et al. 2022), section 2, through field surveys described, in section 4.2.
 
-The data is made available through The World Bank MicroData Repository and here on Github. 
+The replication data is here on Github, and made available through The World Bank MicroData Repository (starting in July 2022). 
 
 3. Statement about rights
 
@@ -28,7 +30,7 @@ I certify that the author(s) of the manuscript have legitimate access to and per
 
 4. Summary of Availability
 
-Some data cannot be made publicly available - see below for details. 
+Some household location data cannot be made publicly available - see below for details. 
 
 
 5. Details on data source and dataset
@@ -71,7 +73,7 @@ The list below indicates input data and ouput tables for the provided programs.
 	NE_impact_analysis  - baseline characteristics Jan22 		panel_dataset_for_replication.dta 					1	
 	NE_impact_analysis - random inference jan22			panel_dataset_for_replication.dta					3-5,9, A2-A6,A13,A15-A18	
 	NE_impact_analysis - information treatment jan22		panel_dataset_for_replication.dta					6-7,10	
-	NE balance test - jan22						panel_dataset_for_replication.dta, distances from households.dta*	A1	6 tables for sets of vars
+	NE balance test - jan22						panel_dataset_for_replication.dta, distances from households.dta*	A1, 6 tables var sets
 	NE_impact_analysis - random inference interactions jan22	panel_dataset_for_replication.dta					A7-A12, A14	
 	NE_impact_analysis - pdslasso jan22				panel_dataset_for_replication.dta					A19-A24	
 
@@ -80,11 +82,11 @@ The list below indicates input data and ouput tables for the provided programs.
 
 In what follows, we explain the steps required to use the attached files:
 
-1) 	Folders in the working directory are: do, data, results, and log. 
-2) 	Change the file path at the beginning of each  do-file 
+1) 	Folders in the working directory are: do, data, results, doc, and log. 
+2) 	Change the file paths at the beginning of each  do-file 
 	- The do-files generate log-files that are saved in a folder "log"
 	- The do-files generate tex files that are saved in a folder "results"
-3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC 
+3) 	Make sure have distinct, estout, psdlasso, and ritest from SSC. The last versions checked for compatibility are in ado.  
 4) 	Run one of the 6 do files 
 5) 	Output from the log files references the table in the paper
 	Output in the tex files should be viewed using Latex 
